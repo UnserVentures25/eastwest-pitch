@@ -6,19 +6,17 @@
 <meta name="robots" content="noindex">
 <meta name="description" content="Angebot Unser Ventures für East West Models — Digital Agency OS und Social Media Engine.">
 <title>East West Pitch 2026</title>
-</head>
-<body>
 <style>
   :root {
-    --bg: #0A0A0A;
-    --surface: #151617;
-    --surface-2: #1C1E1F;
-    --line: #2A2C2E;
-    --fg: #FFFFFF;
-    --muted: #94A0A7;
+    --bg: #FFFFFF;
+    --surface: #F5F7F8;
+    --surface-2: #EDF1F3;
+    --line: #DFE4E7;
+    --fg: #111315;
+    --muted: #5C686F;
     --accent: #009FE3;
-    --accent-soft: rgba(0, 159, 227, 0.14);
-    --shadow: 0 1px 0 rgba(255,255,255,.04);
+    --accent-soft: rgba(0, 159, 227, 0.10);
+    --shadow: 0 1px 2px rgba(16,24,32,.05);
     --sans: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --step-0: 1rem;
     --step-1: 1.1875rem;
@@ -26,76 +24,112 @@
     --step-3: 2.25rem;
     --step-4: clamp(2.5rem, 6vw, 4.25rem);
   }
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --bg: #FFFFFF;
-      --surface: #F5F7F8;
-      --surface-2: #EDF1F3;
-      --line: #DFE4E7;
-      --fg: #111315;
-      --muted: #5C686F;
-      --accent-soft: rgba(0, 159, 227, 0.10);
-      --shadow: 0 1px 2px rgba(16,24,32,.05);
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A0A0A;
+      --surface: #151617;
+      --surface-2: #1C1E1F;
+      --line: #2A2C2E;
+      --fg: #FFFFFF;
+      --muted: #94A0A7;
+      --accent-soft: rgba(0, 159, 227, 0.14);
+      --shadow: 0 1px 0 rgba(255,255,255,.04);
     }
   }
-  :root[data-theme="light"] {
-    --bg: #FFFFFF;
-    --surface: #F5F7F8;
-    --surface-2: #EDF1F3;
-    --line: #DFE4E7;
-    --fg: #111315;
-    --muted: #5C686F;
-    --accent-soft: rgba(0, 159, 227, 0.10);
-    --shadow: 0 1px 2px rgba(16,24,32,.05);
+  :root[data-theme="dark"] {
+    --bg: #0A0A0A;
+    --surface: #151617;
+    --surface-2: #1C1E1F;
+    --line: #2A2C2E;
+    --fg: #FFFFFF;
+    --muted: #94A0A7;
+    --accent-soft: rgba(0, 159, 227, 0.14);
+    --shadow: 0 1px 0 rgba(255,255,255,.04);
   }
 
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: var(--sans);
-    font-size: var(--step-0);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans);
+    font-size: var(--step-0); line-height: 1.6; -webkit-font-smoothing: antialiased;
   }
   .wrap { width: min(1120px, 92vw); margin-inline: auto; }
 
-  .eyebrow {
-    font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
-    color: var(--accent); font-weight: 700; margin: 0 0 .9rem;
-  }
-  h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -.02em; }
+  .eyebrow { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 .9rem; }
+  h1, h2, h3, h4 { text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -.02em; }
   h1 { font-size: var(--step-4); line-height: 1.02; }
   h1 .thin { font-weight: 300; display: block; color: var(--muted); }
   h2 { font-size: var(--step-3); line-height: 1.1; }
   h3 { font-size: var(--step-1); line-height: 1.25; }
+  h4 { font-size: 1.05rem; }
   p { margin: 0; }
   a { color: var(--accent); }
 
-  header.hero {
-    border-bottom: 1px solid var(--line);
-    padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem);
-  }
+  header.hero { border-bottom: 1px solid var(--line); padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3rem); }
   .hero-inner { display: flex; flex-direction: column; gap: 1.6rem; }
   .brandline { display: flex; align-items: center; gap: 1rem; }
   .brandline img { height: 30px; width: auto; }
-  .brandline span {
-    font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted);
-    padding-left: 1rem; border-left: 1px solid var(--line);
-  }
-  .lede { font-size: var(--step-1); color: var(--muted); max-width: 60ch; }
+  .brandline span { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); padding-left: 1rem; border-left: 1px solid var(--line); }
+  .lede { font-size: var(--step-1); color: var(--muted); max-width: 62ch; }
 
-  section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-bottom: 1px solid var(--line); }
+  /* ---- Reiter ---- */
+  .tabbar { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .tabbar-inner { display: flex; gap: .4rem; align-items: stretch; overflow-x: auto; scrollbar-width: none; }
+  .tabbar-inner::-webkit-scrollbar { display: none; }
+  .tab {
+    appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
+    color: var(--muted); font-family: inherit; font-size: .9rem; font-weight: 700;
+    letter-spacing: .02em; padding: 1.1rem 1.1rem; cursor: pointer; white-space: nowrap;
+    display: flex; flex-direction: column; gap: .15rem; text-align: left;
+  }
+  .tab .sub { font-size: .7rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); opacity: .8; }
+  .tab:hover { color: var(--fg); }
+  .tab[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+  .tab[aria-selected="true"] .sub { color: var(--accent); opacity: 1; }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  section { padding: clamp(2.6rem, 6vw, 4.5rem) 0; border-bottom: 1px solid var(--line); }
   .sec-head { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2.2rem; }
-  .sec-head p { color: var(--muted); max-width: 62ch; }
+  .sec-head p { color: var(--muted); max-width: 64ch; }
+  section > .wrap > p + p, .stack > p + p { margin-top: .9rem; }
+  .stack { display: flex; flex-direction: column; gap: .9rem; max-width: 78ch; }
+  .stack p, .stack ul { color: var(--muted); }
+  .stack strong, .stack b { color: var(--fg); font-weight: 600; }
+  .sub-h { margin: 2.4rem 0 1rem; }
+  .sub-h .cy { color: var(--accent); font-weight: 400; }
+
+  ul.list { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: .5rem; max-width: 78ch; }
+  ul.list strong { color: var(--fg); font-weight: 600; }
+
+  .kbox {
+    background: var(--surface); border: 1px solid var(--line); border-left: 2px solid var(--accent);
+    border-radius: 2px; padding: 1.2rem 1.3rem; margin: 1.6rem 0; color: var(--muted); max-width: 80ch;
+  }
+  .kbox .t { color: var(--fg); font-weight: 700; margin-bottom: .4rem; }
+  .kbox strong { color: var(--fg); font-weight: 600; }
+
+  .darkbox {
+    background: var(--surface-2); border: 1px solid var(--line); border-radius: 2px;
+    padding: 1.5rem 1.4rem; margin: 1.8rem 0;
+  }
+  .darkbox .big { font-size: var(--step-2); font-weight: 700; letter-spacing: -.02em; }
+  .darkbox .big .cy { color: var(--accent); }
+  .darkbox p { color: var(--muted); margin-top: .6rem; max-width: 74ch; }
+  .darkbox ol { margin: .8rem 0 0; padding-left: 1.2rem; color: var(--muted); display: grid; gap: .45rem; }
+
+  .formel { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 1.4rem 0; }
+  .formel div {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
+    padding: .85rem .9rem; display: flex; flex-direction: column; gap: .15rem;
+  }
+  .formel b { font-size: .95rem; }
+  .formel span { font-size: .78rem; color: var(--muted); }
 
   .offers { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
   .offer {
     background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
-    padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 1rem;
-    box-shadow: var(--shadow);
+    padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow);
   }
+  .offer.pick { border-color: var(--accent); }
   .offer .tag { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
   .price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
   .price-row .label { color: var(--muted); font-size: .9rem; }
@@ -103,6 +137,7 @@
   .price small { font-size: .8rem; font-weight: 400; color: var(--muted); }
   .offer ul { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: .3rem; }
   .offer ul strong { color: var(--fg); font-weight: 600; }
+
   .pdflink {
     display: flex; align-items: center; gap: .6rem; margin-top: auto;
     border: 1px solid var(--line); border-radius: 2px; padding: .75rem .9rem;
@@ -110,41 +145,23 @@
     letter-spacing: .01em; background: var(--surface-2);
     transition: border-color .15s ease, background-color .15s ease;
   }
+  .pdflink.solo { margin-top: 0; max-width: 420px; }
   .pdflink:hover { border-color: var(--accent); background: var(--accent-soft); }
   .pdflink:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   .pdflink svg { flex: none; width: 15px; height: 15px; stroke: var(--accent); }
   .pdflink .meta { margin-left: auto; color: var(--muted); font-weight: 400; font-size: .75rem; white-space: nowrap; }
-  .cta-links { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
-  .cta a.ghost {
-    border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600;
-    padding: .8rem 1.3rem; border-radius: 2px; font-size: .85rem; background: var(--surface-2);
-  }
-  .cta a.ghost:hover { border-color: var(--accent); }
-  .cta a.ghost:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
 
   .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .reel { display: flex; flex-direction: column; gap: .85rem; }
-  .reel video {
-    width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 2px;
-    border: 1px solid var(--line); display: block;
-  }
+  .reel video { width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 2px; border: 1px solid var(--line); display: block; }
   .reel .pillar { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
   .reel p { color: var(--muted); font-size: .92rem; }
   .reel .meta { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
-  .carousel {
-    display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory;
-    padding-bottom: 1rem; scrollbar-width: thin;
-  }
-  .carousel img {
-    flex: 0 0 clamp(220px, 28vw, 300px); scroll-snap-align: start;
-    border: 1px solid var(--line); border-radius: 2px; height: auto; display: block;
-  }
+  .carousel { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; scrollbar-width: thin; }
+  .carousel img { flex: 0 0 clamp(220px, 28vw, 300px); scroll-snap-align: start; border: 1px solid var(--line); border-radius: 2px; height: auto; display: block; }
   .carousel-nav { display: flex; gap: .5rem; margin-top: .4rem; }
-  .carousel-nav button {
-    background: var(--surface-2); color: var(--fg); border: 1px solid var(--line);
-    border-radius: 2px; width: 40px; height: 34px; cursor: pointer; font-size: 1rem; line-height: 1;
-  }
+  .carousel-nav button { background: var(--surface-2); color: var(--fg); border: 1px solid var(--line); border-radius: 2px; width: 40px; height: 34px; cursor: pointer; font-size: 1rem; line-height: 1; }
   .carousel-nav button:hover { border-color: var(--accent); color: var(--accent); }
   .carousel-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
@@ -154,31 +171,55 @@
   .screen figcaption { font-size: .85rem; color: var(--muted); }
   .screen figcaption b { color: var(--fg); font-weight: 600; }
 
-  .table-scroll { overflow-x: auto; }
+  .steps { display: grid; gap: 1rem; counter-reset: st; }
+  .steps article {
+    display: grid; grid-template-columns: 2.4rem 1fr; gap: 1rem; align-items: start;
+    border-bottom: 1px solid var(--line); padding-bottom: 1rem;
+  }
+  .steps article:last-child { border-bottom: 0; }
+  .steps .n {
+    width: 2.2rem; height: 2.2rem; border: 1px solid var(--line); border-radius: 2px;
+    display: grid; place-items: center; font-size: .82rem; font-weight: 700; color: var(--accent);
+    background: var(--surface); font-variant-numeric: tabular-nums;
+  }
+  .steps .when { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .steps h4 { margin: .15rem 0 .35rem; }
+  .steps p { color: var(--muted); font-size: .94rem; max-width: 72ch; }
+  .steps strong { color: var(--fg); font-weight: 600; }
+
+  .table-scroll { overflow-x: auto; margin: 1.2rem 0; }
   table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 540px; }
   th { text-align: left; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding: 0 1rem .7rem 0; border-bottom: 1px solid var(--line); }
-  td { padding: .8rem 1rem .8rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td { padding: .8rem 1rem .8rem 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted); }
+  td strong, td b { color: var(--fg); font-weight: 600; }
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-right: 0; }
   tr.highlight td { color: var(--fg); font-weight: 700; background: var(--accent-soft); }
   tr.highlight td:first-child { padding-left: .7rem; }
+  table.keyed td:first-child { color: var(--fg); font-weight: 600; width: 27%; }
+  .no { color: var(--muted); }
+  .yes { color: var(--accent); font-weight: 700; }
 
-  .note { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 70ch; }
+  .note { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 74ch; }
 
   footer { padding: clamp(3rem, 7vw, 5rem) 0 4rem; }
-  .cta {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; justify-content: space-between;
-    background: var(--surface); border: 1px solid var(--line); padding: 1.8rem 1.6rem; border-radius: 2px;
-  }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; justify-content: space-between; background: var(--surface); border: 1px solid var(--line); padding: 1.8rem 1.6rem; border-radius: 2px; }
   .cta .big { font-size: var(--step-2); font-weight: 700; letter-spacing: -.02em; }
-  .cta a.button {
-    background: var(--accent); color: #041018; text-decoration: none; font-weight: 700;
-    padding: .8rem 1.5rem; border-radius: 2px; font-size: .9rem; letter-spacing: .04em;
-  }
+  .cta-links { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+  .cta a.button { background: var(--accent); color: #041018; text-decoration: none; font-weight: 700; padding: .8rem 1.5rem; border-radius: 2px; font-size: .9rem; letter-spacing: .04em; }
   .cta a.button:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
-  .legal { margin-top: 2rem; font-size: .75rem; color: var(--muted); max-width: 78ch; }
+  .cta a.ghost { border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600; padding: .8rem 1.3rem; border-radius: 2px; font-size: .85rem; background: var(--surface-2); }
+  .cta a.ghost:hover { border-color: var(--accent); }
+  .cta a.ghost:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  .legal { margin-top: 2rem; font-size: .75rem; color: var(--muted); max-width: 80ch; }
+  .sign { margin-top: 1.6rem; }
+  .sign b { font-size: 1.05rem; }
+  .sign span { color: var(--muted); }
 
+  [hidden] { display: none !important; }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
+</head>
+<body>
 
 <header class="hero">
   <div class="wrap hero-inner">
@@ -187,71 +228,108 @@
       <span>Angebot 2026 · Unser Ventures</span>
     </div>
     <h1>Digital Agency OS<span class="thin">und Social Media Engine</span></h1>
-    <p class="lede">Ein eigenes Betriebssystem für East West Models statt Mediaslide-Miete — und ein Instagram-Kanal,
-      der Kundenanfragen erzeugt statt nur Models zu zeigen. Auf dieser Seite: beide Angebote im Überblick,
-      Ansichten aus dem laufenden System, abspielbare Beispiel-Reels und beide Angebote als PDF.</p>
+    <p class="lede">Zwei Angebote für East West Models: ein eigenes Betriebssystem statt Mediaslide-Miete — und ein
+      Instagram-Kanal, der Kundenanfragen erzeugt statt nur Models zu zeigen. Beide vollständig auf dieser Seite,
+      mit abspielbaren Beispiel-Reels und Ansichten aus dem laufenden System.</p>
   </div>
 </header>
+
+<nav class="tabbar" aria-label="Angebote">
+  <div class="wrap tabbar-inner" role="tablist">
+    <button class="tab" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="true" type="button">
+      <span class="sub">Instagram &amp; Content</span>Social Media Engine
+    </button>
+    <button class="tab" role="tab" id="tab-os" aria-controls="panel-os" aria-selected="false" type="button">
+      <span class="sub">Mediaslide-Ersatz</span>Digital Agency OS
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== PANEL: SOCIAL MEDIA ==================== -->
+<div id="panel-social" role="tabpanel" aria-labelledby="tab-social" tabindex="-1">
 
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Zwei Angebote</p>
-      <h2>Was zur Entscheidung steht</h2>
-      <p>Das Agency OS ersetzt Mediaslide vollständig. Die Social Media Engine baut darauf auf, funktioniert
-        aber als eigenständige Entscheidung.</p>
+      <p class="eyebrow">01 — Ausgangslage</p>
+      <h2>Der Account zeigt Models. Er verkauft sie nicht.</h2>
+      <p>Wer bucht, folgt nicht wegen schöner Bilder — sondern weil er glaubt, dass diese Agentur sein
+        Casting-Problem löst.</p>
     </div>
 
-    <div class="offers">
-      <article class="offer">
-        <span class="tag">Teil 1 · Agency OS</span>
-        <h3>Komplett</h3>
-        <ul>
-          <li><strong>Model Database</strong> mit Portal und Selbstpflege</li>
-          <li><strong>E-Mail-Anbindung:</strong> Anfragen werden automatisch ausgelesen</li>
-          <li><strong>AI-Matching</strong> mit Begründung je Model</li>
-          <li>Packages mit Öffnungs-Tracking, Booking, Kalender, Castings</li>
-          <li>Spesen, Rechnungen, Newsletter, Verträge, Scouting</li>
-        </ul>
-        <div class="price-row">
-          <span class="label">einmalig, 3 Raten</span>
-          <span class="price">18.900 €</span>
-        </div>
-        <div class="price-row">
-          <span class="label">Starter-Einstieg</span>
-          <span class="price">9.900 €</span>
-        </div>
-        <a class="pdflink" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
-          <span>Angebot Agency OS lesen</span>
-          <span class="meta">PDF · 1,9 MB</span>
-        </a>
-      </article>
+    <div class="stack">
+      <p>Modelagenturen auf Instagram machen fast alle dasselbe: Models posten, Marke taggen, Herz drunter. Das bedient
+        die bestehende Community — Models, Fotografen, Branche. Es erreicht aber kaum den Menschen, der tatsächlich
+        Budget freigibt: <strong>Art Buyer, Creative Director, Producer, Brand Manager, E-Commerce-Verantwortliche.</strong></p>
+      <p>Diese Menschen suchen keine schönen Gesichter — davon sehen sie täglich tausende. Sie suchen Sicherheit:
+        Ist dieses Model für meine Kampagne richtig? Kennt die Agentur mein Segment? Kann ich mich auf Verfügbarkeit,
+        Rechte und Ablauf verlassen? <strong>Genau diese Fragen beantwortet der Account heute nicht.</strong></p>
+    </div>
 
-      <article class="offer">
-        <span class="tag">Teil 2 · Social Media</span>
-        <h3>Strategie &amp; Content-Engine</h3>
-        <ul>
-          <li>Content-Architektur mit <strong>7 Säulen</strong> und festen Serienformaten</li>
-          <li><strong>30 fertige Beiträge</strong> als Startvorrat</li>
-          <li>Generator, Redaktionskalender, Freigabe-Workflow</li>
-          <li><strong>Automatisches Veröffentlichen</strong> auf Instagram</li>
-          <li>Reporting: welcher Beitrag zur Anfrage geführt hat</li>
-        </ul>
-        <div class="price-row">
-          <span class="label">Paket M, einmalig</span>
-          <span class="price">5.490 €</span>
-        </div>
-        <div class="price-row">
-          <span class="label">Betrieb</span>
-          <span class="price">200 € <small>/ Monat</small></span>
-        </div>
-        <a class="pdflink" href="Angebot_EastWest_Social_Media.pdf" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
-          <span>Angebot Social Media lesen</span>
-          <span class="meta">PDF · 585 KB</span>
-        </a>
-      </article>
+    <div class="kbox">
+      <div class="t">Die Umstellung in einem Satz</div>
+      Das Model bleibt der Content — aber die Zielgruppe ist der Buchende. Jeder Post beantwortet still die Frage:
+      <strong>„Warum sollte ein Unternehmen ausgerechnet East West kontaktieren?“</strong>
+    </div>
+
+    <h3 class="sub-h">Die Content-Formel</h3>
+    <div class="formel">
+      <div><b>Hook</b><span>Aussage, die stoppt</span></div>
+      <div><b>Knowledge</b><span>echtes Casting-Wissen</span></div>
+      <div><b>Model</b><span>Beispiel am Talent</span></div>
+      <div><b>Proof</b><span>Erfahrung, Jobs, Jahre</span></div>
+      <div><b>CTA</b><span>„Send us your brief“</span></div>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:44%">Heute</th><th>Künftig</th></tr></thead>
+        <tbody>
+          <tr><td>„Meet Eve.“</td><td>„Why Eve works for watch campaigns — and what brands should look for in a watch model.“</td></tr>
+          <tr><td>„Eve wearing @brand.“</td><td>„18 years with East West. Still booking. What makes a model last?“</td></tr>
+          <tr><td>Beliebiges „DM us“</td><td>„Have a casting brief? Send it to East West.“</td></tr>
+          <tr><td>Zielgruppe: Branche und Models</td><td>Zielgruppe: Menschen mit Budget</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">02 — Strategie</p>
+      <h2>Sieben Content-Säulen</h2>
+      <p>Jede Säule hat ein Ziel, ein festes Format und einen wiederkehrenden Rhythmus — planbar statt zufällig.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:22%">Säule</th><th>Was gezeigt wird</th><th style="width:24%">Ziel</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Model Intelligence</strong></td><td>„Why this model works for …“ — Model plus Begründung, für welchen Job-Typ es prädestiniert ist</td><td>Talent zeigen <em>und</em> Kompetenz beweisen</td></tr>
+          <tr><td><strong>Casting Knowledge</strong></td><td>„What makes a great beauty / watch / sports / e-commerce model?“</td><td>Als Experte wahrgenommen werden</td></tr>
+          <tr><td><strong>Agency Insights</strong></td><td>„Agency Secret #01: The most expensive model isn't always the most expensive choice.“</td><td>Autorität und Vertrauen</td></tr>
+          <tr><td><strong>Behind the Booking</strong></td><td>Vom Brief zur Kampagne — was nach dem Brief tatsächlich passiert</td><td>Agenturleistung erklären</td></tr>
+          <tr><td><strong>Client Success</strong></td><td>Case Study: Brief, Auswahl, Begründung, Ergebnis</td><td>Beweis statt Behauptung</td></tr>
+          <tr><td><strong>New Faces</strong></td><td>„Meet [Name]. New to East West. Not new to the camera.“ plus Eignungsprofil</td><td>Neue Models vermarkten</td></tr>
+          <tr><td><strong>Industry Trends</strong></td><td>Einordnung von Entwicklungen: KI-Bilder, Usage-Rechte, E-Commerce-Produktion</td><td>Relevanz und Aktualität</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Wiederkehrende Formate <span class="cy">— als Serie wiedererkennbar</span></h3>
+    <ul class="list">
+      <li><strong>„What brands should look for“</strong> — je Segment eine Folge: Watch, Beauty, E-Commerce, Sport, Fragrance, Hair, Jewelry, Automotive, Lifestyle</li>
+      <li><strong>„Casting Director's Eye #01, #02, #03 …“</strong> — jeweils drei bis fünf Punkte, warum ein Model für ein Segment funktioniert</li>
+      <li><strong>„Agency Secrets“</strong> — kurze, zugespitzte Wahrheiten aus dem Agenturalltag</li>
+      <li><strong>„Model Match“</strong> — Brief links, Vorschlag rechts, Begründung darunter; das Format spiegelt exakt, was das Agency OS intern rechnet</li>
+    </ul>
+
+    <div class="kbox">
+      <div class="t">Ein CTA statt zehn</div>
+      Kein beliebiges „DM us“. Stattdessen durchgängig eine Handlung: <strong>„Have a casting brief? Send it to East West.“</strong>
+      Das ist nicht nur professioneller — es ist auch messbar, weil eingehende Briefs künftig automatisch im Agency OS landen.
     </div>
   </div>
 </section>
@@ -324,9 +402,292 @@
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Das System</p>
-      <h2>Ansichten aus dem Agency OS</h2>
-      <p>Im Branding von East West — gleiche Wortmarke, gleiche Hausfarbe. Kein generisches SaaS-Interface.</p>
+      <p class="eyebrow">03 — Automatisierung</p>
+      <h2>Der Content entsteht aus euren eigenen Daten</h2>
+      <p>Das Agency OS kennt Models, Maße, Skills, Kunden, Jobs und Referenzen. Genau daraus lässt sich dieser
+        Content erzeugen — statt ihn jede Woche neu zu erfinden.</p>
+    </div>
+
+    <h3>Wochenplan, automatisch vorbereitet</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:14%">Tag</th><th style="width:24%">Säule</th><th>Vom System vorgeschlagen</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Montag</strong></td><td>Model Intelligence</td><td>„Why Max works for automotive.“ — gewählt aus aktiven Models mit passenden Skills und freier Verfügbarkeit</td></tr>
+          <tr><td><strong>Dienstag</strong></td><td>Casting Knowledge</td><td>„3 things brands should include in a casting brief.“</td></tr>
+          <tr><td><strong>Mittwoch</strong></td><td>New Face</td><td>„Meet our newest talent.“ — automatisch aus zuletzt freigegebenen Modelprofilen</td></tr>
+          <tr><td><strong>Donnerstag</strong></td><td>Client Success</td><td>„How we matched a luxury brand with the right face.“ — aus einem abgeschlossenen Job mit vorliegender Freigabe</td></tr>
+          <tr><td><strong>Freitag</strong></td><td>Industry Insight</td><td>„What makes a great beauty model?“</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Content-Chancen werden erkannt, nicht gesucht</h3>
+    <div class="stack">
+      <p>Sobald ein Job im Agency OS abgeschlossen ist, prüft das System: Liegen Bilder vor? Existiert eine Freigabe
+        des Kunden? Eine Freigabe des Models? Ist eine Referenz hinterlegt? Wenn ja, entsteht automatisch ein
+        Vorschlagspaket:</p>
+    </div>
+    <ul class="list" style="margin-top:1rem">
+      <li><strong>Post:</strong> „Why this model works for luxury watch campaigns.“</li>
+      <li><strong>Carousel:</strong> „5 things luxury brands look for in a model.“</li>
+      <li><strong>Story:</strong> „Behind the campaign.“</li>
+      <li><strong>Kunden-Newsletter:</strong> „Discover our latest luxury talent.“</li>
+      <li><strong>Modelprofil:</strong> Referenz bereits vorbereitet</li>
+    </ul>
+    <div class="stack" style="margin-top:1rem">
+      <p>Ein Booker oder die Marketingverantwortliche sieht den Vorschlag, ändert bei Bedarf einen Satz, gibt frei —
+        fertig. <strong>Ohne Freigabe wird nichts veröffentlicht.</strong></p>
+    </div>
+
+    <h3 class="sub-h">Was gebaut wird</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:27%">Baustein</th><th>Funktion</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Content-Generator</strong></td><td>Erzeugt Ideen und fertige Captions nach der Formel Hook, Knowledge, Model, Proof, CTA — gespeist aus Models, Skills, Jobs und Referenzen. Tonalität und Serienlogik sind als Vorlagen hinterlegt</td></tr>
+          <tr><td><strong>Redaktionskalender</strong></td><td>Wochen- und Monatsansicht, Säulen farblich unterschieden, Drag &amp; Drop, Feiertage und Kampagnenphasen berücksichtigt</td></tr>
+          <tr><td><strong>Freigabe-Workflow</strong></td><td>Entwurf, Prüfung, freigegeben, geplant, veröffentlicht. Bild-, Model- und Kundenfreigaben werden vorher geprüft und blockieren bei Bedarf den Versand</td></tr>
+          <tr><td><strong>Automatisches Veröffentlichen</strong></td><td>Geplante Beiträge gehen zum gesetzten Zeitpunkt selbstständig raus — Einzelbild, Carousel, Reel und Story</td></tr>
+          <tr><td><strong>Rechte-Prüfung</strong></td><td>Jedes Motiv trägt seinen Rechtestatus. Bilder ohne Freigabe erscheinen gar nicht erst im Vorschlag</td></tr>
+          <tr><td><strong>Reporting &amp; Attribution</strong></td><td>Reichweite, Interaktion, Profilaufrufe je Säule — und der entscheidende Wert: <strong>welcher Content zu einer eingehenden Anfrage geführt hat</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="kbox">
+      <div class="t">Der Punkt, an dem sich beide Angebote verbinden</div>
+      Weil das Agency OS künftig das Agentur-Postfach ausliest, ist jede eingehende Anfrage ein Datensatz. Zusammen mit
+      Trackinglinks und Zeitpunkt lässt sich zuordnen, welche Inhalte tatsächlich Anfragen erzeugt haben — nicht nur Likes.
+      <strong>Damit wird Instagram zum messbaren Vertriebskanal statt zum Imagekanal.</strong>
+    </div>
+
+    <div class="kbox">
+      <div class="t">Was technisch geht — und was nicht</div>
+      Automatisches Veröffentlichen läuft über die offizielle Instagram-Schnittstelle. Voraussetzungen: ein
+      Instagram-<strong>Business-Konto</strong>, verbunden mit einer Facebook-Seite, sowie eine geprüfte Meta-App
+      (Freigabeverfahren, Dauer je nach Prüfung typischerweise ein bis drei Wochen). Möglich sind Einzelbilder, Carousels,
+      Reels und Stories, begrenzt auf 50 automatisch veröffentlichte Beiträge in 24 Stunden — für den geplanten Rhythmus
+      weit ausreichend. <strong>Nicht über die Schnittstelle möglich:</strong> das Markieren von Personen in fremden
+      Accounts ohne deren Zustimmung sowie das nachträgliche Ändern bereits veröffentlichter Beiträge. LinkedIn kann auf
+      demselben Weg ergänzt werden — für B2B oft sogar der wertvollere Kanal.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">04 — Investition</p>
+      <h2>Drei Wege</h2>
+      <p>Strategie allein, Strategie plus Automatisierung, oder zusätzlich laufende redaktionelle Begleitung.</p>
+    </div>
+
+    <div class="offers">
+      <article class="offer">
+        <span class="tag">Paket S</span>
+        <h3>Strategie &amp; Redaktionsplan</h3>
+        <ul>
+          <li>Positionierung und Zielgruppenschärfung (Art Buyer, Creative Director, Producer, Brand Manager)</li>
+          <li>Content-Architektur: <strong>7 Säulen</strong>, Serienformate, Tonalität, CTA-Systematik</li>
+          <li><strong>30 fertig ausformulierte Beiträge</strong> als Startvorrat (Captions inkl. Hooks, deutsch und englisch)</li>
+          <li>Redaktionsplan für drei Monate, Bildbriefing je Format</li>
+          <li>Zwei Arbeitssitzungen mit dem Team (Kickoff und Übergabe)</li>
+        </ul>
+        <div class="price-row"><span class="label">einmalig</span><span class="price">2.290 €</span></div>
+      </article>
+
+      <article class="offer pick">
+        <span class="tag">Paket M · empfohlen</span>
+        <h3>Strategie &amp; Content-Engine</h3>
+        <ul>
+          <li><strong>Alles aus Paket S</strong></li>
+          <li>Content-Engine im Agency OS: Generator, Redaktionskalender, Freigabe-Workflow, Rechte-Prüfung</li>
+          <li><strong>Automatisches Veröffentlichen</strong> auf Instagram inkl. Einrichtung und Meta-App-Freigabeverfahren</li>
+          <li>Content-Chancen-Erkennung nach Jobabschluss (Post, Carousel, Story, Newsletter, Referenz)</li>
+          <li>Reporting inkl. Anfragen-Attribution über die E-Mail-Anbindung</li>
+        </ul>
+        <div class="price-row"><span class="label">einmalig statt 7.190 €</span><span class="price">5.490 €</span></div>
+      </article>
+    </div>
+
+    <p class="note">Paket M setzt das EASTWEST Digital Agency OS voraus, da Generator und Attribution auf dessen Daten
+      zugreifen. Wird es zusammen mit dem Agency OS beauftragt, ersetzt Paket M die dort genannte Option
+      „Content-Engine / Instagram-Automation“ zu 4.900 € und enthält zusätzlich die vollständige Strategiearbeit.</p>
+
+    <h3 class="sub-h">Was das ersetzt <span class="cy">— und was es spart</span></h3>
+    <div class="stack">
+      <p>Die Aufgabe, die hier automatisiert wird, erledigt sonst eine Person: Ideen entwickeln, Texte schreiben,
+        Bilder auswählen, planen, posten, auswerten. Der Vergleich über zwei Jahre:</p>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Weg</th><th class="num">Jahr 1</th><th class="num">Jahr 2</th><th class="num">2 Jahre gesamt</th></tr></thead>
+        <tbody>
+          <tr><td>Social-Media-Manager angestellt (Teilzeit, 20 Std./Woche, inkl. Arbeitgeberanteil)*</td><td class="num">ca. 28.000 €</td><td class="num">ca. 28.000 €</td><td class="num">ca. 56.000 €</td></tr>
+          <tr><td>Social-Media-Agentur mit laufender Betreuung*</td><td class="num">18.000 – 42.000 €</td><td class="num">18.000 – 42.000 €</td><td class="num">36.000 – 84.000 €</td></tr>
+          <tr><td>Freier Content-Creator auf Monatsbasis*</td><td class="num">12.000 – 24.000 €</td><td class="num">12.000 – 24.000 €</td><td class="num">24.000 – 48.000 €</td></tr>
+          <tr class="highlight"><td>Paket M + Betrieb</td><td class="num">7.890 €</td><td class="num">2.400 €</td><td class="num">10.290 €</td></tr>
+          <tr><td><strong>Paket M + Betrieb + redaktionelle Begleitung</strong></td><td class="num"><strong>14.490 €</strong></td><td class="num"><strong>9.000 €</strong></td><td class="num"><strong>23.490 €</strong></td></tr>
+          <tr><td><strong>Ersparnis gegenüber einer Teilzeitstelle über zwei Jahre</strong></td><td class="num">&nbsp;</td><td class="num">&nbsp;</td><td class="num"><strong>ca. 45.700 €</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">*Marktübliche Bandbreiten, keine Angebote Dritter. Teilzeitstelle gerechnet mit ca. 20 Std./Woche
+      auf Basis eines Bruttojahresgehalts von 45.000 € für eine Vollzeitstelle zzgl. Arbeitgeberanteil. Agentur- und
+      Freelancer-Spannen aus marktüblichen Monatspauschalen (1.500–3.500 € bzw. 1.000–2.000 €). Der entscheidende
+      Unterschied liegt nicht nur im Preis: Eine Person, die geht, nimmt ihr Wissen mit. Das System bleibt.</p>
+
+    <h3 class="sub-h">Laufend</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Leistung</th><th class="num" style="width:20%">Preis</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Betrieb der Content-Engine</strong> — Infrastruktur, AI-Kontingent, Schnittstellen-Pflege, Monitoring, Bugfixes</td><td class="num">200 € / Monat</td></tr>
+          <tr><td><strong>Redaktionelle Begleitung (optional)</strong> — monatlicher Redaktionsplan, Feinschliff der Beiträge vor Freigabe, monatliches Reporting mit Handlungsempfehlung</td><td class="num">550 € / Monat</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Mindestlaufzeit 6 Monate, danach monatlich kündbar. Werbebudget für bezahlte Reichweite ist nicht
+      enthalten und wird — falls gewünscht — direkt bei Meta abgerechnet.</p>
+
+    <div class="darkbox">
+      <div class="big">Günstiger als ein halbes Jahr Social-Media-Manager <span class="cy">— und es bleibt euch.</span></div>
+      <p>Eine einzige zusätzliche Kampagnenanfrage trägt das gesamte Paket: Bei den im Hauptangebot genannten
+        Budgetgrößen liegt eine mittlere Kampagne im fünfstelligen Bereich. Der Kanal muss nicht viral gehen —
+        er muss die richtigen zwanzig Leute erreichen.</p>
+    </div>
+
+    <h3 class="sub-h">Zeitplan</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:22%">Phase</th><th>Inhalt</th><th class="num" style="width:18%">Dauer</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Strategie</strong></td><td>Kickoff, Positionierung, Content-Architektur, Startvorrat und Redaktionsplan</td><td class="num">Woche 1–3</td></tr>
+          <tr><td><strong>Technische Einrichtung</strong></td><td>Business-Konto prüfen, Meta-App anlegen, Freigabeverfahren starten</td><td class="num">Woche 2</td></tr>
+          <tr><td><strong>Content-Engine</strong></td><td>Generator, Kalender, Freigabe-Workflow, Rechte-Prüfung, Reporting</td><td class="num">Woche 3–6</td></tr>
+          <tr><td><strong>Testbetrieb</strong></td><td>Beiträge werden erzeugt und freigegeben, aber manuell veröffentlicht</td><td class="num">Woche 6–7</td></tr>
+          <tr><td><strong>Automatikbetrieb</strong></td><td>Nach erteilter Meta-Freigabe: geplante Beiträge gehen selbstständig raus</td><td class="num">ab Woche 7</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Das Meta-Freigabeverfahren liegt nicht in unserer Hand. Bis zur Erteilung läuft der Kanal im
+      Testbetrieb — die Inhalte entstehen bereits automatisch, nur das Veröffentlichen erfolgt vorübergehend manuell.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">05 — Voraussetzungen</p>
+      <h2>Was von East West kommt</h2>
+      <p>Damit realistisch bleibt, was geplant ist.</p>
+    </div>
+
+    <ul class="list">
+      <li><strong>Bildrechte.</strong> Kampagnenbilder dürfen nur mit Freigabe des Kunden gezeigt werden, Modelaufnahmen nur im Rahmen der vereinbarten Nutzung. Das System prüft den hinterlegten Status — hinterlegen muss ihn die Agentur.</li>
+      <li><strong>Eine verantwortliche Person</strong> für Freigaben, mit etwa zwei bis drei Stunden pro Woche. Ohne diese Freigabeschleife steht der Kanal.</li>
+      <li><strong>Instagram-Business-Konto</strong> mit verbundener Facebook-Seite und Administrationszugang.</li>
+      <li><strong>Fachliche Zuarbeit für die Wissensbeiträge.</strong> Was einen guten Beauty- oder Uhren-Cast ausmacht, weiß die Agentur — die AI formuliert es, erfinden kann und soll sie es nicht.</li>
+      <li><strong>Entscheidung zur Sprache.</strong> Empfehlung: englisch als Hauptsprache mit deutschen Beiträgen für den DACH-Markt, da internationale Kunden mitlesen.</li>
+    </ul>
+
+    <div class="kbox">
+      <div class="t">Ehrliche Einordnung</div>
+      Dieser Ansatz wirkt nicht über Nacht. B2B-Content baut Vertrauen über Monate auf — realistisch sind erste
+      direkte Anfragen über den Kanal nach etwa drei bis sechs Monaten kontinuierlicher Veröffentlichung. Was sofort
+      wirkt, ist etwas anderes: Wer nach einem Erstkontakt das Profil prüft, sieht künftig eine Agentur, die ihr
+      Handwerk erklärt — nicht nur schöne Bilder. Diese Wirkung auf laufende Verkaufsgespräche ist der schnellere Hebel.
+    </div>
+
+    <div class="darkbox">
+      <p class="eyebrow" style="margin-bottom:.2rem">So geht es weiter</p>
+      <ol>
+        <li>Kurzer Termin (30 Min): Zielgruppen, Tonalität, Freigabe-Verantwortung klären</li>
+        <li>Entscheidung Paket S oder M</li>
+        <li>Kickoff-Workshop, parallel Meta-Freigabeverfahren starten</li>
+        <li>Erste Beiträge nach ca. drei Wochen, Automatikbetrieb nach ca. sieben Wochen</li>
+      </ol>
+    </div>
+
+    <a class="pdflink solo" href="Angebot_EastWest_Social_Media.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+      <span>Dieses Angebot als PDF</span>
+      <span class="meta">585 KB</span>
+    </a>
+  </div>
+</section>
+
+</div>
+
+<!-- ==================== PANEL: AGENCY OS ==================== -->
+<div id="panel-os" role="tabpanel" aria-labelledby="tab-os" tabindex="-1" hidden>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">01 — Ausgangslage</p>
+      <h2>Booker-Zeit ist die teuerste Ressource der Agentur</h2>
+      <p>Und sie fließt heute in Arbeit, die eine Maschine übernehmen kann.</p>
+    </div>
+
+    <div class="stack">
+      <p>East West Models arbeitet heute mit Mediaslide plus vielen manuellen Prozessen: Datenpflege,
+        Pola-Nachforderungen, Verfügbarkeitsabfragen, Package-Erstellung, Newsletter, Rechnungsvorbereitung,
+        Belegzuordnung. All das kostet Booker-Zeit, die nicht in Kundengewinnung und Bookings fließt.</p>
+      <p><strong>Das Angebot:</strong> Ein eigenes, AI-natives Betriebssystem, das Mediaslide vollständig ersetzt und
+        deutlich darüber hinausgeht. Daten werden einmal erfasst und überall intelligent genutzt — von der Anfrage
+        über Casting, Booking und Reise bis zu Rechnung, Referenz und Newsletter.</p>
+    </div>
+
+    <div class="kbox">
+      <div class="t">Das Prinzip: Human in the Loop</div>
+      Die AI bereitet vor — Briefs lesen, Models vorschlagen, Rechnungen entwerfen, Belege zuordnen, Newsletter texten.
+      Freigegeben wird immer von einem Menschen. <strong>Keine verbindliche Buchung, kein Vertrag, keine Rechnung
+      verlässt das Haus ohne Klick eines Bookers.</strong>
+    </div>
+
+    <div class="kbox">
+      <div class="t">Die Anfrage kommt ins System, nicht ins Postfach-Chaos</div>
+      Das Agentur-Postfach wird einmalig mit dem System verbunden. Ab dann landet jede Kundenanfrage automatisch als
+      strukturierter Datensatz im Anfragen-Eingang — ausgelesen, dem Kunden zugeordnet, mit Rückfragen zu dem, was im
+      Brief fehlt. <strong>Der Booker tippt nichts ab, er prüft und gibt frei.</strong>
+    </div>
+
+    <h3 class="sub-h">Wo die Zeit heute hingeht <span class="cy">— und was bleibt</span></h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Manuelle Aufgabe heute</th><th class="num">Std./Wo.*</th><th>Im Agency OS</th><th class="num">Std./Wo.*</th></tr></thead>
+        <tbody>
+          <tr><td>Modeldaten &amp; Maße pflegen, Polas nachfordern</td><td class="num">4,0</td><td>Model pflegt selbst im Portal, System erinnert automatisch</td><td class="num">0,5</td></tr>
+          <tr><td>Anfragen aus dem Postfach erfassen, Models zusammensuchen</td><td class="num">4,0</td><td>Anfrage wird automatisch aus dem verbundenen Postfach gelesen, AI schlägt Models mit Match-Score vor</td><td class="num">1,0</td></tr>
+          <tr><td>Packages bauen und versenden</td><td class="num">3,0</td><td>Auswahl aus dem Matching → Link in Minuten</td><td class="num">0,5</td></tr>
+          <tr><td>Verfügbarkeiten abfragen, Doppelbuchungen klären</td><td class="num">3,0</td><td>Kalender mit automatischem Konflikt-Check</td><td class="num">1,0</td></tr>
+          <tr><td>Belege sortieren, Rechnungen vorbereiten</td><td class="num">4,0</td><td>AI liest Belege, erstellt Rechnungsentwurf</td><td class="num">1,0</td></tr>
+          <tr><td>Newsletter &amp; Kunden-Follow-ups</td><td class="num">2,0</td><td>AI-Entwurf aus echten Agenturdaten, Booker gibt frei</td><td class="num">0,5</td></tr>
+          <tr class="highlight"><td>Summe</td><td class="num">20,0</td><td>Verbleibend</td><td class="num">4,5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="formel" style="margin-top:1.4rem">
+      <div><b>~15 Std.</b><span>frei pro Woche*</span></div>
+      <div><b>~60 Std.</b><span>frei pro Monat*</span></div>
+      <div><b>~11 Monate</b><span>bis Paket A sich trägt*</span></div>
+    </div>
+    <p class="note">*Schätzung auf Basis typischer Agenturabläufe dieser Größe, nicht gemessen bei East West.
+      Amortisation gerechnet mit 30 €/Std. interner Kosten: ca. 1.800 €/Monat eingesparte Arbeitszeit gegenüber
+      18.900 € einmalig zzgl. Betrieb. Die tatsächlichen Werte klären wir im Discovery-Workshop.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">02 — Das System</p>
+      <h2>So sieht das Agency OS aus</h2>
+      <p>Alle Abbildungen zeigen Ansichten im Branding von East West Models — gleiche Wortmarke, gleiche Hausfarbe,
+        gleiche Typografie. Kein generisches SaaS-Interface, sondern eine Oberfläche, die zur Agentur passt.</p>
     </div>
 
     <div class="screens">
@@ -336,16 +697,101 @@
       </figure></div>
       <div class="screen"><figure>
         <img src="app-inquiry.jpg" alt="Anfrage mit AI-Analyse">
-        <figcaption><b>AI-Brief-Analyse.</b> Aus der Kunden-Mail extrahiert: Datum, Location, Models, Budget, Usage — mit Konfidenzwert.</figcaption>
+        <figcaption><b>AI-Brief-Analyse.</b> Aus der Kunden-Mail extrahiert: Datum, Location, Models, Budget, Usage — mit Konfidenzwert und einer Liste der offenen Punkte.</figcaption>
       </figure></div>
       <div class="screen"><figure>
         <img src="app-kalender.jpg" alt="Produktionskalender">
-        <figcaption><b>Produktionskalender.</b> Bookings, Optionen, Castings und Go-Sees in einer Ansicht, mit Konflikt-Check.</figcaption>
+        <figcaption><b>Produktionskalender.</b> Bookings, Optionen, Castings, Go-Sees und Sperrzeiten in einer Ansicht, mit automatischem Konflikt-Check.</figcaption>
       </figure></div>
       <div class="screen"><figure>
-        <img src="app-expenses.jpg" alt="Spesen mit AI-Auswertung">
-        <figcaption><b>Spesen mit Belegerkennung.</b> Anbieter, Betrag und Job automatisch gelesen — der doppelte Hotelbeleg fällt sofort auf.</figcaption>
+        <img src="app-expenses.jpg" alt="AI Expense Management">
+        <figcaption><b>AI Expense Management.</b> Anbieter, Betrag, Datum und Job werden aus dem Beleg gelesen. Der Hotelbeleg ist als Prüfung markiert, weil dieselbe Übernachtung bereits über die Agentur lief — genau die Doppelzahlung, die sonst niemandem auffällt.</figcaption>
       </figure></div>
+    </div>
+
+    <ul class="list" style="margin-top:2rem">
+      <li><strong>Action Center</strong> — alle offenen Freigaben, Deadlines und Einreichungen aus dem Model Portal an einem Ort. Der Booker arbeitet Entscheidungen ab statt Listen.</li>
+      <li><strong>Anfragen-Eingang</strong> — jede Anfrage mit Status, Kunde, Shootingdatum und AI-Konfidenz. Nichts geht zwischen Postfach und Kalender verloren.</li>
+      <li><strong>Packages</strong> — kuratierte Auswahl als eleganter Link statt PDF-Anhang; der Status zeigt, ob der Kunde bereits geöffnet und reagiert hat.</li>
+      <li><strong>Client CRM</strong> — Kunden mit Segment, letztem Kontakt und nächster Aktion. Inaktive Kunden fallen sofort auf.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">03 — Ein Tag im System</p>
+      <h2>Von der Anfrage zur Rechnung</h2>
+      <p>Beispielhafter Ablauf einer Kampagnenanfrage — durchgehend im selben System, ohne Excel, ohne Mail-Pingpong.</p>
+    </div>
+
+    <div class="steps">
+      <article>
+        <span class="n">1</span>
+        <div>
+          <span class="when">Dienstag, 9:12</span>
+          <h4>Die Anfrage kommt an</h4>
+          <p>Das Agentur-Postfach ist mit dem System verbunden. Die Mail wird automatisch erkannt und ausgelesen:
+            Kunde, Shootingtage, Location, Anzahl Models, Budgetrahmen und Usage — samt Liste dessen, was im Brief
+            fehlt („Buyout-Dauer nicht genannt“). <strong>Niemand tippt etwas ab.</strong> Der Booker prüft nur, ob
+            alles korrekt übernommen wurde, und gibt frei.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">2</span>
+        <div>
+          <span class="when">9:14</span>
+          <h4>AI Model Matching</h4>
+          <p>Das System durchsucht die gesamte Kartei und schlägt Models mit Match-Score vor, jeweils mit Begründung
+            („Why this model?“) und Warnhinweisen, etwa wenn Polas veraltet sind oder der Pass in Kürze abläuft.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">3</span>
+        <div>
+          <span class="when">9:25</span>
+          <h4>Package raus</h4>
+          <p>Booker wählt aus, ergänzt ein Wort zur Auswahl, versendet einen eleganten Link im East-West-Design.
+            Kein PDF-Anhang, keine WeTransfer-Links.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">4</span>
+        <div>
+          <span class="when">11:40</span>
+          <h4>Hot-Lead-Signal</h4>
+          <p>Der Kunde öffnet das Package. Der Booker sieht es live, sieht welche Models geliked wurden — und ruft
+            im richtigen Moment an.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">5</span>
+        <div>
+          <span class="when">Mittwoch</span>
+          <h4>Option &amp; Booking</h4>
+          <p>1. Option wird gesetzt, das System prüft automatisch gegen Doppelbuchungen. Bei Bestätigung erhalten die
+            Models automatisch Call Time, Location und Ansprechpartner.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">6</span>
+        <div>
+          <span class="when">Nach dem Job</span>
+          <h4>Spesen &amp; Rechnung</h4>
+          <p>Models laden Belege im Portal hoch, die AI liest Anbieter, Betrag und Datum, ordnet dem Job zu und
+            erkennt Doppelerfassungen. Der Rechnungsentwurf entsteht automatisch aus Gage, Provision, Buyout und Spesen.</p>
+        </div>
+      </article>
+      <article>
+        <span class="n">7</span>
+        <div>
+          <span class="when">Danach</span>
+          <h4>Referenz &amp; Newsletter</h4>
+          <p>Die Kampagne landet als Referenz im Modelprofil, der Kunde in der Reaktivierungs-Logik. Ein
+            „New Face“-Newsletter-Entwurf inklusive passender Kundenempfehlung liegt zur Freigabe bereit.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -353,73 +799,390 @@
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Wirtschaftlichkeit</p>
-      <h2>Was der Social-Kanal sonst kostet</h2>
-      <p>Dieselbe Arbeit — Ideen, Texte, Bildauswahl, Planung, Veröffentlichung, Auswertung — im Vergleich über zwei Jahre.</p>
+      <p class="eyebrow">04 — Module</p>
+      <h2>Was gebaut wird</h2>
+      <p>Stufe 1 bildet den kompletten Kern-Workflow ab, Stufe 2 den Ausbau um Marketing, Verträge und Auswertung.</p>
+    </div>
+
+    <h3>Stufe 1 — Kern-System</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:20%">Modul</th><th>Was es kann</th><th style="width:26%">Verbesserung ggü. Mediaslide</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Foundation &amp; Sicherheit</strong></td><td>Login, 8 Rollen (Admin, Booker, Scout, Accounting, Marketing, Model, Client), granulare Rechte, Mandantenfähigkeit</td><td>DSGVO-konform, EU-Hosting, volle Datenhoheit</td></tr>
+          <tr><td><strong>Model Database</strong></td><td>Profile, Maße mit Historie, Portfolio/Polas/Digitals, Dokumente mit Ablaufdaten, Skills, Rates</td><td>Vollständigkeits-Score pro Profil, alles verknüpft</td></tr>
+          <tr><td><strong>Model Portal + Self-Onboarding</strong></td><td>Jedes Model pflegt Profil, Fotos, Maße, Dokumente selbst; Onboarding-Wizard per Link</td><td><strong>Booker tippt keine Modeldaten mehr ein</strong> — Model liefert, Booker gibt frei</td></tr>
+          <tr><td><strong>Aktualitäts-Engine</strong></td><td>Ampel-Status für Polas / Maße / Pass; automatische Reminder mit Eskalation an den Booker</td><td>Mediaslide erinnert niemanden — hier bleibt die Kartei von selbst aktuell</td></tr>
+          <tr><td><strong>Client CRM (Client 360)</strong></td><td>Kunden, Kontakte, Aktivitäten, Segmente, „nächste Aktion“, Inaktivitäts-Erkennung</td><td>Vollwertiges CRM statt Adressliste</td></tr>
+          <tr><td><strong>E-Mail-Anbindung</strong></td><td>Agentur-Postfach einmalig verbinden (Google Workspace / Microsoft 365 / IMAP). Eingehende Anfragen werden automatisch erkannt, ausgelesen und als Anfrage angelegt — inklusive Anhängen. Regeln legen fest, welche Postfächer und Absender erfasst werden</td><td><strong>Gibt es in Mediaslide nicht</strong> — die Anfrage ist im System, bevor sie jemand gelesen hat</td></tr>
+          <tr><td><strong>AI Brief-Analyse</strong></td><td>AI extrahiert Kunde, Datum, Location, Models, Budget, Usage; erstellt Rückfragen zu fehlenden Punkten. Booker prüft die Übernahme und gibt frei</td><td>Gibt es in Mediaslide nicht</td></tr>
+          <tr><td><strong>AI Model Matching</strong></td><td>Brief → Match-Score pro Model mit Begründung „Why this model?“ und Warnungen</td><td>Gibt es in Mediaslide nicht — <strong>Kernstück des Systems</strong></td></tr>
+          <tr><td><strong>Packages &amp; Client-Ansicht</strong></td><td>Kuratierte Auswahl als eleganter Link; Kunde liked, kommentiert, bestätigt</td><td><strong>Hot-Lead-Tracking:</strong> Booker sieht live, wann der Kunde öffnet</td></tr>
+          <tr><td><strong>Booking Engine + Kalender</strong></td><td>Optionen, Bookings, Drag&amp;Drop-Kalender, automatische Model-Info (Call Time, Location)</td><td>Automatischer Konflikt-Check gegen Doppelbuchung</td></tr>
+          <tr><td><strong>Casting Management</strong></td><td>Castings mit Slots, Attendance am Handy abhaken, Feedback, Ergebnis → ein Klick zur Option</td><td>Mobiler Casting-Tag-Workflow</td></tr>
+          <tr><td><strong>AI Expense Management</strong></td><td>Beleg-Upload → AI liest Anbieter/Betrag/Datum, ordnet Job zu, erkennt Duplikate</td><td>Gibt es so nirgends am Markt</td></tr>
+          <tr><td><strong>Billing &amp; AI-Rechnungen</strong></td><td>Rechnungsentwurf aus Gagen, Provision, Buyout, Spesen; AI-Prüfung; PDF; Model Statements</td><td>Schnellere, fehlerärmere Abrechnung</td></tr>
+          <tr><td><strong>AI Action Center + Daily Briefing</strong></td><td>Eine Startseite mit allen offenen Freigaben und Deadlines — Approve / Edit / Reject</td><td>Gibt es in Mediaslide nicht</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Stufe 2 — Ausbau</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:26%">Modul</th><th>Was es kann</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Newsletter + AI</strong></td><td>Segmentierte Verteiler (Fashion, Beauty, VIP …), Editorial-Templates, Open-/Click-Tracking; Automation: neues Model freigegeben → „New Face“-Entwurf inkl. passender Kunden-Empfehlung</td></tr>
+          <tr><td><strong>Client Reactivation</strong></td><td>AI erkennt „Kunde X hat seit 8 Monaten nicht gebucht“ → fertiger Follow-up-Entwurf</td></tr>
+          <tr><td><strong>Verträge &amp; E-Signatur</strong></td><td>Templates mit Auto-Befüllung aus dem Booking, digitale Unterschrift per Link, Ablauf-Reminder</td></tr>
+          <tr><td><strong>Job Memory + References + Assets</strong></td><td>Jede Kampagne als digitale Akte; automatischer Referenz-Vorschlag fürs Modelprofil; Kampagnenbilder mit Rechte-Management</td></tr>
+          <tr><td><strong>Scouting</strong></td><td>Öffentliches Bewerbungsformular, Kandidaten-Pipeline, AI-Ersteinschätzung, ein Klick zum Model-Onboarding</td></tr>
+          <tr><td><strong>Business Intelligence</strong></td><td>Dashboards: Umsatz, Bookings, Top-Kunden, Top-Models, Conversion, offene Posten</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="kbox">
+      <div class="t">Ohne Aufpreis mit dabei</div>
+      <strong>Hot-Lead-Tracking</strong> — Benachrichtigung, sobald ein Kunde ein Package öffnet. ·
+      <strong>Digitale Sedcard-Links</strong> mit Ansichts-Statistik statt PDF-Anhängen. ·
+      <strong>DSGVO als Verkaufsargument</strong> — EU-Hosting, Einwilligungen, Abmeldelinks, Löschkonzept. ·
+      <strong>White-Label-Architektur ab Tag 1</strong> — das System ist von Beginn an mandantenfähig gebaut.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">05 — Einordnung</p>
+      <h2>Was das einzeln kosten würde</h2>
+      <p>Marktübliche Preise einer klassischen Software-Agentur (DE, Sätze 90–140 €/Std.), wenn jedes Modul einzeln
+        beauftragt würde.</p>
     </div>
 
     <div class="table-scroll">
       <table>
-        <thead>
-          <tr>
-            <th>Weg</th>
-            <th class="num">Jahr 1</th>
-            <th class="num">Jahr 2</th>
-            <th class="num">Zwei Jahre</th>
-          </tr>
-        </thead>
+        <thead><tr><th>Modul</th><th class="num" style="width:26%">Einzelpreis klassische Agentur</th></tr></thead>
         <tbody>
-          <tr><td>Social-Media-Manager angestellt, Teilzeit 20 Std.</td><td class="num">28.000 €</td><td class="num">28.000 €</td><td class="num">56.000 €</td></tr>
-          <tr><td>Agentur mit laufender Betreuung</td><td class="num">18.000 – 42.000 €</td><td class="num">18.000 – 42.000 €</td><td class="num">36.000 – 84.000 €</td></tr>
-          <tr><td>Freier Content-Creator</td><td class="num">12.000 – 24.000 €</td><td class="num">12.000 – 24.000 €</td><td class="num">24.000 – 48.000 €</td></tr>
-          <tr class="highlight"><td>Content-Engine mit Betrieb</td><td class="num">7.890 €</td><td class="num">2.400 €</td><td class="num">10.290 €</td></tr>
+          <tr><td>Foundation, Auth, Rollen, Mandantenfähigkeit</td><td class="num">12.000 – 18.000 €</td></tr>
+          <tr><td>Model Database inkl. Medienverwaltung</td><td class="num">10.000 – 16.000 €</td></tr>
+          <tr><td>Model Portal + Onboarding + Reminder-Engine</td><td class="num">8.000 – 14.000 €</td></tr>
+          <tr><td>Client CRM</td><td class="num">8.000 – 12.000 €</td></tr>
+          <tr><td>E-Mail-Anbindung mit automatischer Anfragen-Erfassung</td><td class="num">7.000 – 12.000 €</td></tr>
+          <tr><td>AI Brief-Analyse + Model Matching</td><td class="num">12.000 – 20.000 €</td></tr>
+          <tr><td>Packages + Client-Ansicht + Tracking</td><td class="num">6.000 – 10.000 €</td></tr>
+          <tr><td>Booking Engine + Kalender + Castings</td><td class="num">15.000 – 25.000 €</td></tr>
+          <tr><td>Expense-Management mit AI-Belegerkennung</td><td class="num">8.000 – 14.000 €</td></tr>
+          <tr><td>Billing, Rechnungen, Model Statements</td><td class="num">10.000 – 16.000 €</td></tr>
+          <tr><td>AI Action Center + Daily Briefing + Notifications</td><td class="num">6.000 – 10.000 €</td></tr>
+          <tr><td>Newsletter-System + AI-Generator</td><td class="num">6.000 – 10.000 €</td></tr>
+          <tr><td>Verträge + E-Signatur</td><td class="num">5.000 – 8.000 €</td></tr>
+          <tr><td>Job Memory, References, Asset-/Rechte-Management</td><td class="num">6.000 – 10.000 €</td></tr>
+          <tr><td>Scouting</td><td class="num">4.000 – 6.000 €</td></tr>
+          <tr class="highlight"><td>Summe klassisch · Laufzeit 9–15 Monate, Team aus 3–5 Personen</td><td class="num">123.000 – 201.000 €</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note">Marktübliche Bandbreiten, keine Angebote Dritter. Teilzeitstelle gerechnet auf Basis von
-      45.000 € Bruttojahresgehalt für eine Vollzeitstelle zzgl. Arbeitgeberanteil, anteilig für 20 Stunden.
-      Der Unterschied liegt nicht nur im Preis: Eine Person, die geht, nimmt ihr Wissen mit. Das System bleibt.</p>
+    <p class="note"><strong>Warum dieses Angebot einen Bruchteil kostet:</strong> AI-gestützte Entwicklung statt
+      manuellem Coden im Stundensatz-Modell. Gleiche Funktionalität, moderner Stack, ein Ansprechpartner statt
+      Agentur-Overhead.</p>
+
+    <h3 class="sub-h">Vergleich mit Mediaslide</h3>
+    <div class="stack">
+      <p>Mediaslide veröffentlicht keine Preise (nur „Request a demo“). Marktüblich für Agentursoftware dieser Klasse
+        (Mediaslide, Syngency, Netwalk u. a.): <strong>ca. 300 – 800 €/Monat</strong> je nach Agenturgröße und
+        Modulen — Schätzwert, als solcher gekennzeichnet.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="keyed">
+        <thead><tr><th>&nbsp;</th><th style="width:26%">Mediaslide (Miete)</th><th style="width:30%">EASTWEST Agency OS</th></tr></thead>
+        <tbody>
+          <tr><td>Eigentum</td><td class="no">Nie — Miete auf ewig</td><td class="yes">Gehört East West</td></tr>
+          <tr><td>Postfach-Anbindung: Anfragen automatisch erfassen</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>AI Brief-Analyse &amp; Matching</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>Automatische Pola-/Dokument-Reminder</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>AI-Rechnungsentwürfe + Spesen-OCR</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>Package-View-Tracking (Hot Leads)</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>AI Newsletter + Kunden-Reaktivierung</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>Action Center / Daily Briefing</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><td>Anpassbar an eure Workflows</td><td class="no">Kaum</td><td class="yes">Vollständig</td></tr>
+          <tr><td>Datenhoheit / EU-Hosting</td><td class="no">Anbieterabhängig</td><td class="yes">Ja, eigene Datenbank</td></tr>
+          <tr><td>White-Label-Weiterverkauf</td><td class="no">Unmöglich</td><td class="yes">Möglich (Option)</td></tr>
+          <tr class="highlight"><td>Kosten über 5 Jahre</td><td>ca. 18.000 – 48.000 € Miete*</td><td>18.900 € einmalig + Betrieb</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">*Schätzung auf Basis marktüblicher Preise, da Mediaslide nur auf Anfrage anbietet.</p>
+
+    <div class="darkbox">
+      <div class="big">Bei Mediaslide zahlt East West jedes Jahr weiter <span class="cy">und besitzt am Ende nichts.</span></div>
+      <p>Hier entsteht ein eigenes Asset — mit AI-Funktionen, die es dort schlicht nicht gibt.</p>
+    </div>
   </div>
 </section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">06 — Investition</p>
+      <h2>Zwei Wege zum System</h2>
+      <p>Alles auf einmal — oder Schritt für Schritt mit dem Kern beginnen.</p>
+    </div>
+
+    <div class="offers">
+      <article class="offer pick">
+        <span class="tag">Paket A · empfohlen</span>
+        <h3>Komplett</h3>
+        <ul>
+          <li>Alle Module aus <strong>Stufe 1 und Stufe 2</strong></li>
+          <li>ca. <strong>13 Wochen</strong> bis Vollausbau</li>
+          <li>Datenmigration aus Mediaslide (Export vorausgesetzt)</li>
+          <li>Einweisung des Teams (2 Sessions)</li>
+          <li>30 Tage Nachbesserung nach jeder Abnahme</li>
+        </ul>
+        <div class="price-row"><span class="label">einmalig, 3 Raten à 6.300 €</span><span class="price">18.900 €</span></div>
+        <p class="note" style="margin-top:0">Raten fällig bei Auftragserteilung, Go-Live Kern-System und Abnahme
+          Vollausbau. Ersparnis gegenüber Schritt-für-Schritt-Aufbau: 4.500 €.</p>
+      </article>
+
+      <article class="offer">
+        <span class="tag">Paket B · Einstieg</span>
+        <h3>Starter</h3>
+        <ul>
+          <li>Foundation &amp; Sicherheit · Model Database</li>
+          <li>Model Portal + Self-Onboarding · Aktualitäts-Engine</li>
+          <li>Client CRM</li>
+          <li><strong>E-Mail-Anbindung + AI Brief-Analyse + AI Model Matching</strong></li>
+          <li>Packages inkl. Hot-Lead-Tracking</li>
+          <li>Booking Engine + Kalender + Castings</li>
+        </ul>
+        <div class="price-row"><span class="label">einmalig, 2 Raten à 4.950 €</span><span class="price">9.900 €</span></div>
+        <p class="note" style="margin-top:0">Damit ist der Kern-Workflow vollständig: Anfrage → AI-Matching →
+          Package → Booking. Alles Weitere lässt sich danach einzeln ergänzen.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-h">Step-by-Step-Erweiterungen <span class="cy">— nach dem Starter einzeln buchbar</span></h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Erweiterung</th><th class="num" style="width:20%">Preis</th></tr></thead>
+        <tbody>
+          <tr><td>Finance-Paket: AI-Spesen-Erkennung + Billing + AI-Rechnungen + Model Statements</td><td class="num">3.900 €</td></tr>
+          <tr><td>AI Cockpit: Action Center + Daily Briefing + Notification Engine</td><td class="num">2.400 €</td></tr>
+          <tr><td>Newsletter + AI-Generator + Client Reactivation</td><td class="num">2.400 €</td></tr>
+          <tr><td>Verträge + E-Signatur</td><td class="num">1.900 €</td></tr>
+          <tr><td>Job Memory + References + Asset-/Rechte-Management + Scouting + Business Intelligence</td><td class="num">2.900 €</td></tr>
+          <tr><td><strong>Starter + alle Erweiterungen</strong></td><td class="num"><strong>23.400 €</strong></td></tr>
+          <tr class="highlight"><td>Zum Vergleich: Paket A Komplett</td><td class="num">18.900 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Laufend: Betrieb &amp; Instandhaltung</h3>
+    <div class="stack">
+      <p><strong>Starter: 350 €/Monat · Vollausbau: 500 €/Monat</strong> netto (Mindestlaufzeit 12 Monate, danach
+        monatlich kündbar):</p>
+    </div>
+    <ul class="list" style="margin-top:1rem">
+      <li>Server &amp; Infrastruktur (Datenbank, Hosting, Storage, Domains, E-Mail-Versand)</li>
+      <li>AI-API-Kontingent für den Regelbetrieb (Fair-Use; bei außergewöhnlichem Mehrverbrauch Abstimmung)</li>
+      <li>Monitoring, Backups, Sicherheits-Updates</li>
+      <li>Bugfixes + kleine Anpassungen (bis 3 Std./Monat, nicht übertragbar)</li>
+      <li>Support per E-Mail/WhatsApp, Reaktion werktags &lt; 24 h</li>
+    </ul>
+    <p class="note">Größere neue Features nach Aufwand oder als Festpreis-Paket.</p>
+
+    <h3 class="sub-h">Optional: Stufe 3 <span class="cy">— nach Go-Live</span></h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Option</th><th class="num" style="width:24%">Preis</th></tr></thead>
+        <tbody>
+          <tr><td>Content-Engine / Instagram-Automation (Anbindung bestehende Pipeline)</td><td class="num">4.900 € + 200 €/Monat</td></tr>
+          <tr><td>White-Label-Ausbau (Tenant-Verwaltung, Branding, Subdomains) — East West lizenziert das System an Partneragenturen</td><td class="num">9.900 € einmalig</td></tr>
+          <tr><td>Campaign-/Web-Monitoring</td><td class="num">auf Anfrage</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">07 — Ausblick</p>
+      <h2>Aus dem Kostenpunkt wird eine Einnahmequelle</h2>
+      <p>Das System ist von Tag 1 mandantenfähig gebaut. East West kann es unter eigener Marke an Partneragenturen
+        lizenzieren.</p>
+    </div>
+
+    <div class="stack">
+      <p>Jede Modelagentur hat dieselben Probleme: Mietsoftware ohne Eigentum, keine AI, Datenpflege von Hand.
+        Die Architektur dieses Systems trennt Mandanten bereits vollständig voneinander — Daten, Nutzer, Rechte und
+        Branding sind pro Agentur isoliert. Was dafür noch fehlt, ist die Vermarktungsschicht: Tenant-Verwaltung,
+        eigene Subdomain je Agentur, Logo- und Farbübernahme, Abrechnung.</p>
+    </div>
+
+    <h3 class="sub-h">Was der White-Label-Ausbau liefert</h3>
+    <ul class="list">
+      <li><strong>Tenant-Verwaltung:</strong> neue Partneragentur anlegen, Nutzer einladen, Module freischalten — ohne Entwicklungsaufwand</li>
+      <li><strong>Eigenes Branding je Agentur:</strong> Logo, Hausfarbe, Absenderadresse; die Partneragentur sieht ihr eigenes System, nicht eures</li>
+      <li><strong>Eigene Subdomain</strong> je Mandant (z. B. agentur.agencyos.de)</li>
+      <li><strong>Abrechnung &amp; Vertragslaufzeiten</strong> pro Mandant, inkl. Nutzungsgrenzen</li>
+      <li><strong>Zentrale Updates:</strong> neue Funktionen stehen allen Mandanten sofort zur Verfügung</li>
+    </ul>
+
+    <h3 class="sub-h">Rechenbeispiel <span class="cy">— konservativ gerechnet</span></h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Szenario</th><th class="num">Agenturen</th><th class="num">Lizenz je Monat</th><th class="num">Erlös pro Jahr</th></tr></thead>
+        <tbody>
+          <tr><td>Erste Partner aus dem eigenen Netzwerk</td><td class="num">3</td><td class="num">390 €</td><td class="num">14.040 €</td></tr>
+          <tr><td>Etabliert im DACH-Markt</td><td class="num">8</td><td class="num">390 €</td><td class="num">37.440 €</td></tr>
+          <tr><td>Mit größeren Häusern und Zusatzmodulen</td><td class="num">15</td><td class="num">490 €</td><td class="num">88.200 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Rechenbeispiel, keine Zusage. Die Lizenzhöhe orientiert sich am unteren Rand marktüblicher
+      Agentursoftware (ca. 300–800 €/Monat). Nicht enthalten: Vertrieb, Support der Partneragenturen, anteilige
+      Infrastruktur- und AI-Kosten je Mandant.</p>
+
+    <div class="kbox">
+      <div class="t">Warum das nur mit einem eigenen System geht</div>
+      Mietsoftware wie Mediaslide lässt sich nicht weiterlizenzieren — sie bleibt fremdes Eigentum. Weil East West hier
+      Eigentümer des Systems ist, ist der Weiterverkauf überhaupt erst möglich. Aus einer internen Investition wird ein
+      Produkt. Der White-Label-Ausbau kostet <strong>9.900 € einmalig</strong> — bei drei Partneragenturen ist er nach
+      rund neun Monaten bezahlt.
+      <br><br><strong>Empfehlung:</strong> White-Label erst nach dem Go-Live und ein bis zwei Monaten Realbetrieb
+      angehen — was die eigene Agentur täglich nutzt und für gut befindet, verkauft sich anschließend deutlich leichter.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">08 — Ablauf</p>
+      <h2>Zeitplan &amp; nächste Schritte</h2>
+      <p>Parallelbetrieb statt Risiko-Umstieg: Mediaslide wird erst gekündigt, wenn das Team vollständig umgestellt ist.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th style="width:22%">Phase</th><th>Inhalt</th><th class="num" style="width:18%">Dauer</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kickoff</strong></td><td>Discovery-Workshop: Workflows, Mediaslide-Export, Prioritäten</td><td class="num">Woche 1</td></tr>
+          <tr><td><strong>Stufe 1</strong></td><td>Kern-System bis Go-Live</td><td class="num">Woche 2–7</td></tr>
+          <tr><td><strong>Parallelbetrieb</strong></td><td>System läuft neben Mediaslide, Daten migriert, Team eingewiesen</td><td class="num">Woche 6–8</td></tr>
+          <tr><td><strong>Stufe 2</strong></td><td>Newsletter, Verträge, References, Scouting, BI</td><td class="num">Woche 8–13</td></tr>
+          <tr><td><strong>Mediaslide-Kündigung</strong></td><td>Sobald das Team vollständig umgestellt hat</td><td class="num">ab Woche 10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Warum mit mir</h3>
+    <ul class="list">
+      <li>Ich baue solche Systeme laufend: KI-CRM für Solar-Installateure, Recommerce-Plattform mit Multi-Vendor-Payments, Instagram-Automations-Pipelines im Produktivbetrieb.</li>
+      <li>Ein Ansprechpartner statt Agentur-Overhead — direkte Kommunikation, kurze Wege, schnelle Iterationen.</li>
+      <li><strong>Human-in-the-Loop als Prinzip:</strong> Die AI bereitet vor, Menschen geben frei. Keine Automatisierung von verbindlichen Buchungen, Verträgen oder Zahlungen ohne Freigabe — das passt zur öffentlichen Haltung von East West zu fairem KI-Einsatz in der Mode.</li>
+    </ul>
+
+    <div class="darkbox">
+      <p class="eyebrow" style="margin-bottom:.2rem">Nächste Schritte</p>
+      <ol>
+        <li>Kurzer Termin (30 Min): offene Fragen, Prioritäten</li>
+        <li>Auftragsbestätigung + 1. Rate</li>
+        <li>Discovery-Workshop + Mediaslide-Export anfordern</li>
+        <li>Go-Live Stufe 1 nach ca. 6–7 Wochen</li>
+      </ol>
+    </div>
+
+    <a class="pdflink solo" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+      <span>Dieses Angebot als PDF</span>
+      <span class="meta">1,9 MB</span>
+    </a>
+  </div>
+</section>
+
+</div>
 
 <footer>
   <div class="wrap">
     <div class="cta">
       <div>
         <div class="big">30 Minuten reichen für die offenen Fragen.</div>
-        <p style="color: var(--muted); margin-top:.4rem">Beide Angebote liegen vollständig als PDF auf dieser Seite — Prioritäten und Reihenfolge klären wir im Gespräch.</p>
+        <p style="color: var(--muted); margin-top:.4rem">Beide Angebote stehen vollständig auf dieser Seite und
+          zusätzlich als PDF — Prioritäten und Reihenfolge klären wir im Gespräch.</p>
       </div>
       <div class="cta-links">
-        <a class="ghost" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">Agency OS · PDF</a>
         <a class="ghost" href="Angebot_EastWest_Social_Media.pdf" target="_blank" rel="noopener">Social Media · PDF</a>
+        <a class="ghost" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">Agency OS · PDF</a>
         <a class="button" href="mailto:yves.unser@me.com?subject=EASTWEST%20Digital%20Agency%20OS">Termin vereinbaren</a>
       </div>
     </div>
 
+    <div class="sign">
+      <b>Yves Unser</b><br>
+      <span>Unser Ventures UG · yves.unser@me.com</span>
+    </div>
+
     <p class="legal">
       Unser Ventures UG · Yves Unser · yves.unser@me.com · Angebot vom 15.09.2026, gültig 30 Tage.
-      Alle Preise netto zzgl. 19 % USt. Die gezeigten Reels und Karussell-Slides sind Beispielumsetzungen
-      der Content-Formel; das Runway-Material trägt das Branding Dritter und ist vor einer Veröffentlichung
-      freizugeben. Systemansichten enthalten Beispieldaten.
+      Alle Preise netto zzgl. 19 % USt. Fremdkosten Dritter (Werbebudget, eigene Domain, optionale Dienste)
+      nach tatsächlichem Anfall. Schätzwerte zu Wettbewerber-Preisen und Zeitersparnis sind als solche gekennzeichnet.
+      Die gezeigten Reels und Karussell-Slides sind Beispielumsetzungen der Content-Formel; das Runway-Material trägt
+      das Branding Dritter und ist vor einer Veröffentlichung freizugeben. Systemansichten enthalten Beispieldaten.
+      Aussagen zur Wirkung von Social-Media-Maßnahmen sind Erfahrungswerte, keine zugesicherten Ergebnisse.
     </p>
   </div>
 </footer>
 
 <script>
-  const car = document.getElementById("carousel");
-  const step = () => Math.min(car.clientWidth * 0.8, 640);
-  document.querySelectorAll(".carousel-nav button").forEach(btn => {
-    btn.addEventListener("click", () => {
-      car.scrollBy({ left: Number(btn.dataset.dir) * step(), behavior: "smooth" });
+  (function () {
+    const tabs = [...document.querySelectorAll('.tab')];
+    const panels = { 'tab-social': 'panel-social', 'tab-os': 'panel-os' };
+
+    function select(id, push) {
+      tabs.forEach(t => {
+        const on = t.id === id;
+        t.setAttribute('aria-selected', String(on));
+        document.getElementById(panels[t.id]).hidden = !on;
+      });
+      document.querySelectorAll('video').forEach(v => v.pause());
+      if (push) {
+        const hash = id === 'tab-os' ? '#agency-os' : '#social-media';
+        history.replaceState(null, '', hash);
+        window.scrollTo({ top: document.querySelector('.tabbar').offsetTop, behavior: 'smooth' });
+      }
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => select(t.id, true)));
+    document.querySelector('[role="tablist"]').addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      const i = tabs.findIndex(t => t.getAttribute('aria-selected') === 'true');
+      const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus();
+      select(next.id, true);
     });
-  });
-  car.addEventListener("keydown", e => {
-    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-    e.preventDefault();
-    car.scrollBy({ left: (e.key === "ArrowRight" ? 1 : -1) * step(), behavior: "smooth" });
-  });
-  const vids = [...document.querySelectorAll("video")];
-  vids.forEach(v => v.addEventListener("play", () => vids.filter(o => o !== v).forEach(o => o.pause())));
+
+    select(location.hash === '#agency-os' ? 'tab-os' : 'tab-social', false);
+
+    const car = document.getElementById('carousel');
+    const step = () => Math.min(car.clientWidth * 0.8, 640);
+    document.querySelectorAll('.carousel-nav button').forEach(btn => {
+      btn.addEventListener('click', () => car.scrollBy({ left: Number(btn.dataset.dir) * step(), behavior: 'smooth' }));
+    });
+    car.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      car.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * step(), behavior: 'smooth' });
+    });
+
+    const vids = [...document.querySelectorAll('video')];
+    vids.forEach(v => v.addEventListener('play', () => vids.filter(o => o !== v).forEach(o => o.pause())));
+  })();
 </script>
 
 </body>
