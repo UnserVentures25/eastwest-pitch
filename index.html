@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="description" content="Angebot Unser Ventures für East West Models — Digital Agency OS und Social Media Engine.">
+<title>East West Pitch 2026</title>
 </head>
 <body>
-<title>East West Pitch 2026</title>
 <style>
   :root {
     --bg: #0A0A0A;
@@ -103,6 +103,24 @@
   .price small { font-size: .8rem; font-weight: 400; color: var(--muted); }
   .offer ul { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: .3rem; }
   .offer ul strong { color: var(--fg); font-weight: 600; }
+  .pdflink {
+    display: flex; align-items: center; gap: .6rem; margin-top: auto;
+    border: 1px solid var(--line); border-radius: 2px; padding: .75rem .9rem;
+    color: var(--fg); text-decoration: none; font-size: .85rem; font-weight: 600;
+    letter-spacing: .01em; background: var(--surface-2);
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .pdflink:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .pdflink:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+  .pdflink svg { flex: none; width: 15px; height: 15px; stroke: var(--accent); }
+  .pdflink .meta { margin-left: auto; color: var(--muted); font-weight: 400; font-size: .75rem; white-space: nowrap; }
+  .cta-links { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+  .cta a.ghost {
+    border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600;
+    padding: .8rem 1.3rem; border-radius: 2px; font-size: .85rem; background: var(--surface-2);
+  }
+  .cta a.ghost:hover { border-color: var(--accent); }
+  .cta a.ghost:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
 
   .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .reel { display: flex; flex-direction: column; gap: .85rem; }
@@ -171,7 +189,7 @@
     <h1>Digital Agency OS<span class="thin">und Social Media Engine</span></h1>
     <p class="lede">Ein eigenes Betriebssystem für East West Models statt Mediaslide-Miete — und ein Instagram-Kanal,
       der Kundenanfragen erzeugt statt nur Models zu zeigen. Auf dieser Seite: beide Angebote im Überblick,
-      Ansichten aus dem laufenden System und abspielbare Beispiel-Reels.</p>
+      Ansichten aus dem laufenden System, abspielbare Beispiel-Reels und beide Angebote als PDF.</p>
   </div>
 </header>
 
@@ -203,6 +221,11 @@
           <span class="label">Starter-Einstieg</span>
           <span class="price">9.900 €</span>
         </div>
+        <a class="pdflink" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+          <span>Angebot Agency OS lesen</span>
+          <span class="meta">PDF · 1,9 MB</span>
+        </a>
       </article>
 
       <article class="offer">
@@ -223,6 +246,11 @@
           <span class="label">Betrieb</span>
           <span class="price">200 € <small>/ Monat</small></span>
         </div>
+        <a class="pdflink" href="Angebot_EastWest_Social_Media.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+          <span>Angebot Social Media lesen</span>
+          <span class="meta">PDF · 585 KB</span>
+        </a>
       </article>
     </div>
   </div>
@@ -359,9 +387,13 @@
     <div class="cta">
       <div>
         <div class="big">30 Minuten reichen für die offenen Fragen.</div>
-        <p style="color: var(--muted); margin-top:.4rem">Beide Angebote liegen als PDF vor — Prioritäten und Reihenfolge klären wir im Gespräch.</p>
+        <p style="color: var(--muted); margin-top:.4rem">Beide Angebote liegen vollständig als PDF auf dieser Seite — Prioritäten und Reihenfolge klären wir im Gespräch.</p>
       </div>
-      <a class="button" href="mailto:yves.unser@me.com?subject=EASTWEST%20Digital%20Agency%20OS">Termin vereinbaren</a>
+      <div class="cta-links">
+        <a class="ghost" href="Angebot_EastWest_Agency_OS.pdf" target="_blank" rel="noopener">Agency OS · PDF</a>
+        <a class="ghost" href="Angebot_EastWest_Social_Media.pdf" target="_blank" rel="noopener">Social Media · PDF</a>
+        <a class="button" href="mailto:yves.unser@me.com?subject=EASTWEST%20Digital%20Agency%20OS">Termin vereinbaren</a>
+      </div>
     </div>
 
     <p class="legal">
