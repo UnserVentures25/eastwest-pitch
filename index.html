@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="Angebot Unser Ventures für East West Models — Digital Agency OS und Social Media Engine.">
+</head>
+<body>
+<title>East West Pitch 2026</title>
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --surface: #151617;
+    --surface-2: #1C1E1F;
+    --line: #2A2C2E;
+    --fg: #FFFFFF;
+    --muted: #94A0A7;
+    --accent: #009FE3;
+    --accent-soft: rgba(0, 159, 227, 0.14);
+    --shadow: 0 1px 0 rgba(255,255,255,.04);
+    --sans: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --step-0: 1rem;
+    --step-1: 1.1875rem;
+    --step-2: 1.5rem;
+    --step-3: 2.25rem;
+    --step-4: clamp(2.5rem, 6vw, 4.25rem);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #FFFFFF;
+      --surface: #F5F7F8;
+      --surface-2: #EDF1F3;
+      --line: #DFE4E7;
+      --fg: #111315;
+      --muted: #5C686F;
+      --accent-soft: rgba(0, 159, 227, 0.10);
+      --shadow: 0 1px 2px rgba(16,24,32,.05);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #FFFFFF;
+    --surface: #F5F7F8;
+    --surface-2: #EDF1F3;
+    --line: #DFE4E7;
+    --fg: #111315;
+    --muted: #5C686F;
+    --accent-soft: rgba(0, 159, 227, 0.10);
+    --shadow: 0 1px 2px rgba(16,24,32,.05);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: var(--step-0);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: min(1120px, 92vw); margin-inline: auto; }
+
+  .eyebrow {
+    font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin: 0 0 .9rem;
+  }
+  h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -.02em; }
+  h1 { font-size: var(--step-4); line-height: 1.02; }
+  h1 .thin { font-weight: 300; display: block; color: var(--muted); }
+  h2 { font-size: var(--step-3); line-height: 1.1; }
+  h3 { font-size: var(--step-1); line-height: 1.25; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+
+  header.hero {
+    border-bottom: 1px solid var(--line);
+    padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem);
+  }
+  .hero-inner { display: flex; flex-direction: column; gap: 1.6rem; }
+  .brandline { display: flex; align-items: center; gap: 1rem; }
+  .brandline img { height: 30px; width: auto; }
+  .brandline span {
+    font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted);
+    padding-left: 1rem; border-left: 1px solid var(--line);
+  }
+  .lede { font-size: var(--step-1); color: var(--muted); max-width: 60ch; }
+
+  section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2.2rem; }
+  .sec-head p { color: var(--muted); max-width: 62ch; }
+
+  .offers { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .offer {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
+    padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 1rem;
+    box-shadow: var(--shadow);
+  }
+  .offer .tag { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+  .price-row .label { color: var(--muted); font-size: .9rem; }
+  .price { font-size: var(--step-2); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .price small { font-size: .8rem; font-weight: 400; color: var(--muted); }
+  .offer ul { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: .3rem; }
+  .offer ul strong { color: var(--fg); font-weight: 600; }
+
+  .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .reel { display: flex; flex-direction: column; gap: .85rem; }
+  .reel video {
+    width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 2px;
+    border: 1px solid var(--line); display: block;
+  }
+  .reel .pillar { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .reel p { color: var(--muted); font-size: .92rem; }
+  .reel .meta { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .carousel {
+    display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding-bottom: 1rem; scrollbar-width: thin;
+  }
+  .carousel img {
+    flex: 0 0 clamp(220px, 28vw, 300px); scroll-snap-align: start;
+    border: 1px solid var(--line); border-radius: 2px; height: auto; display: block;
+  }
+  .carousel-nav { display: flex; gap: .5rem; margin-top: .4rem; }
+  .carousel-nav button {
+    background: var(--surface-2); color: var(--fg); border: 1px solid var(--line);
+    border-radius: 2px; width: 40px; height: 34px; cursor: pointer; font-size: 1rem; line-height: 1;
+  }
+  .carousel-nav button:hover { border-color: var(--accent); color: var(--accent); }
+  .carousel-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .screens { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .screen figure { margin: 0; display: flex; flex-direction: column; gap: .6rem; }
+  .screen img { width: 100%; border: 1px solid var(--line); border-radius: 2px; display: block; }
+  .screen figcaption { font-size: .85rem; color: var(--muted); }
+  .screen figcaption b { color: var(--fg); font-weight: 600; }
+
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 540px; }
+  th { text-align: left; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding: 0 1rem .7rem 0; border-bottom: 1px solid var(--line); }
+  td { padding: .8rem 1rem .8rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-right: 0; }
+  tr.highlight td { color: var(--fg); font-weight: 700; background: var(--accent-soft); }
+  tr.highlight td:first-child { padding-left: .7rem; }
+
+  .note { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 70ch; }
+
+  footer { padding: clamp(3rem, 7vw, 5rem) 0 4rem; }
+  .cta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; justify-content: space-between;
+    background: var(--surface); border: 1px solid var(--line); padding: 1.8rem 1.6rem; border-radius: 2px;
+  }
+  .cta .big { font-size: var(--step-2); font-weight: 700; letter-spacing: -.02em; }
+  .cta a.button {
+    background: var(--accent); color: #041018; text-decoration: none; font-weight: 700;
+    padding: .8rem 1.5rem; border-radius: 2px; font-size: .9rem; letter-spacing: .04em;
+  }
+  .cta a.button:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  .legal { margin-top: 2rem; font-size: .75rem; color: var(--muted); max-width: 78ch; }
+
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="brandline">
+      <img src="logo.png" alt="East West Models">
+      <span>Angebot 2026 · Unser Ventures</span>
+    </div>
+    <h1>Digital Agency OS<span class="thin">und Social Media Engine</span></h1>
+    <p class="lede">Ein eigenes Betriebssystem für East West Models statt Mediaslide-Miete — und ein Instagram-Kanal,
+      der Kundenanfragen erzeugt statt nur Models zu zeigen. Auf dieser Seite: beide Angebote im Überblick,
+      Ansichten aus dem laufenden System und abspielbare Beispiel-Reels.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Zwei Angebote</p>
+      <h2>Was zur Entscheidung steht</h2>
+      <p>Das Agency OS ersetzt Mediaslide vollständig. Die Social Media Engine baut darauf auf, funktioniert
+        aber als eigenständige Entscheidung.</p>
+    </div>
+
+    <div class="offers">
+      <article class="offer">
+        <span class="tag">Teil 1 · Agency OS</span>
+        <h3>Komplett</h3>
+        <ul>
+          <li><strong>Model Database</strong> mit Portal und Selbstpflege</li>
+          <li><strong>E-Mail-Anbindung:</strong> Anfragen werden automatisch ausgelesen</li>
+          <li><strong>AI-Matching</strong> mit Begründung je Model</li>
+          <li>Packages mit Öffnungs-Tracking, Booking, Kalender, Castings</li>
+          <li>Spesen, Rechnungen, Newsletter, Verträge, Scouting</li>
+        </ul>
+        <div class="price-row">
+          <span class="label">einmalig, 3 Raten</span>
+          <span class="price">18.900 €</span>
+        </div>
+        <div class="price-row">
+          <span class="label">Starter-Einstieg</span>
+          <span class="price">9.900 €</span>
+        </div>
+      </article>
+
+      <article class="offer">
+        <span class="tag">Teil 2 · Social Media</span>
+        <h3>Strategie &amp; Content-Engine</h3>
+        <ul>
+          <li>Content-Architektur mit <strong>7 Säulen</strong> und festen Serienformaten</li>
+          <li><strong>30 fertige Beiträge</strong> als Startvorrat</li>
+          <li>Generator, Redaktionskalender, Freigabe-Workflow</li>
+          <li><strong>Automatisches Veröffentlichen</strong> auf Instagram</li>
+          <li>Reporting: welcher Beitrag zur Anfrage geführt hat</li>
+        </ul>
+        <div class="price-row">
+          <span class="label">Paket M, einmalig</span>
+          <span class="price">5.490 €</span>
+        </div>
+        <div class="price-row">
+          <span class="label">Betrieb</span>
+          <span class="price">200 € <small>/ Monat</small></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Beispiel-Content</p>
+      <h2>Drei Reels, wie sie das System erzeugt</h2>
+      <p>Gebaut aus echten Modelaufnahmen und einem Runway-Clip. Jeder Beitrag folgt derselben Formel:
+        Hook, Wissen, Model, Beleg, Handlungsaufforderung. Beim mittleren Reel den Ton anschalten.</p>
+    </div>
+
+    <div class="reels">
+      <article class="reel">
+        <video src="reel-1.mp4" controls preload="metadata" playsinline></video>
+        <span class="pillar">Casting Knowledge</span>
+        <h3>What makes a great beauty model?</h3>
+        <p>Drei Kriterien, die kein Portfolio zeigt — Symmetrie im Close-up, Ausdruck ohne Überspielen,
+          Konsistenz nach sechs Stunden am Set.</p>
+        <span class="meta">15 Sekunden · ohne Ton</span>
+      </article>
+
+      <article class="reel">
+        <video src="reel-2.mp4" controls preload="metadata" playsinline></video>
+        <span class="pillar">Agency Insights</span>
+        <h3>You don't need more models</h3>
+        <p>Runway-Material mit Originalton. Die Aussage kehrt das Problem um: Models finden ist einfach,
+          das richtige finden ist die Leistung.</p>
+        <span class="meta">17 Sekunden · mit Ton</span>
+      </article>
+
+      <article class="reel">
+        <video src="reel-3.mp4" controls preload="metadata" playsinline></video>
+        <span class="pillar">Behind the Booking</span>
+        <h3>Was nach dem Brief passiert</h3>
+        <p>Sieben Schritte vom Brief bis zum Shooting — erklärt, warum eine Agentur mehr leistet als eine
+          Suche auf Instagram.</p>
+        <span class="meta">20 Sekunden · ohne Ton</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Karussell</p>
+      <h2>Casting Director's Eye #01</h2>
+      <p>Sieben Slides: warum ein Model für Luxus-Kampagnen funktioniert. Seitlich scrollen oder die
+        Pfeiltasten benutzen.</p>
+    </div>
+
+    <div class="carousel" id="carousel" tabindex="0" aria-label="Karussell-Slides">
+      <img src="k-01.jpg" alt="Slide 1 — Why this model works for luxury campaigns">
+      <img src="k-02.jpg" alt="Slide 2 — Presence, not posing">
+      <img src="k-03.jpg" alt="Slide 3 — Hands and wrists">
+      <img src="k-04.jpg" alt="Slide 4 — Motion experience">
+      <img src="k-05.jpg" alt="Slide 5 — Brand fit over beauty">
+      <img src="k-06.jpg" alt="Slide 6 — Proof, not promises">
+      <img src="k-07.jpg" alt="Slide 7 — Have a casting brief?">
+    </div>
+    <div class="carousel-nav">
+      <button type="button" data-dir="-1" aria-label="Vorherige Slides">&larr;</button>
+      <button type="button" data-dir="1" aria-label="Nächste Slides">&rarr;</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Das System</p>
+      <h2>Ansichten aus dem Agency OS</h2>
+      <p>Im Branding von East West — gleiche Wortmarke, gleiche Hausfarbe. Kein generisches SaaS-Interface.</p>
+    </div>
+
+    <div class="screens">
+      <div class="screen"><figure>
+        <img src="app-models.jpg" alt="Model-Übersicht mit Portfolio-Karten">
+        <figcaption><b>Model Database.</b> Portfolio, Maße, Vollständigkeits-Score und Ampel für Polas, Maße und Pass.</figcaption>
+      </figure></div>
+      <div class="screen"><figure>
+        <img src="app-inquiry.jpg" alt="Anfrage mit AI-Analyse">
+        <figcaption><b>AI-Brief-Analyse.</b> Aus der Kunden-Mail extrahiert: Datum, Location, Models, Budget, Usage — mit Konfidenzwert.</figcaption>
+      </figure></div>
+      <div class="screen"><figure>
+        <img src="app-kalender.jpg" alt="Produktionskalender">
+        <figcaption><b>Produktionskalender.</b> Bookings, Optionen, Castings und Go-Sees in einer Ansicht, mit Konflikt-Check.</figcaption>
+      </figure></div>
+      <div class="screen"><figure>
+        <img src="app-expenses.jpg" alt="Spesen mit AI-Auswertung">
+        <figcaption><b>Spesen mit Belegerkennung.</b> Anbieter, Betrag und Job automatisch gelesen — der doppelte Hotelbeleg fällt sofort auf.</figcaption>
+      </figure></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Wirtschaftlichkeit</p>
+      <h2>Was der Social-Kanal sonst kostet</h2>
+      <p>Dieselbe Arbeit — Ideen, Texte, Bildauswahl, Planung, Veröffentlichung, Auswertung — im Vergleich über zwei Jahre.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Weg</th>
+            <th class="num">Jahr 1</th>
+            <th class="num">Jahr 2</th>
+            <th class="num">Zwei Jahre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Social-Media-Manager angestellt, Teilzeit 20 Std.</td><td class="num">28.000 €</td><td class="num">28.000 €</td><td class="num">56.000 €</td></tr>
+          <tr><td>Agentur mit laufender Betreuung</td><td class="num">18.000 – 42.000 €</td><td class="num">18.000 – 42.000 €</td><td class="num">36.000 – 84.000 €</td></tr>
+          <tr><td>Freier Content-Creator</td><td class="num">12.000 – 24.000 €</td><td class="num">12.000 – 24.000 €</td><td class="num">24.000 – 48.000 €</td></tr>
+          <tr class="highlight"><td>Content-Engine mit Betrieb</td><td class="num">7.890 €</td><td class="num">2.400 €</td><td class="num">10.290 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Marktübliche Bandbreiten, keine Angebote Dritter. Teilzeitstelle gerechnet auf Basis von
+      45.000 € Bruttojahresgehalt für eine Vollzeitstelle zzgl. Arbeitgeberanteil, anteilig für 20 Stunden.
+      Der Unterschied liegt nicht nur im Preis: Eine Person, die geht, nimmt ihr Wissen mit. Das System bleibt.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <div class="big">30 Minuten reichen für die offenen Fragen.</div>
+        <p style="color: var(--muted); margin-top:.4rem">Beide Angebote liegen als PDF vor — Prioritäten und Reihenfolge klären wir im Gespräch.</p>
+      </div>
+      <a class="button" href="mailto:yves.unser@me.com?subject=EASTWEST%20Digital%20Agency%20OS">Termin vereinbaren</a>
+    </div>
+
+    <p class="legal">
+      Unser Ventures UG · Yves Unser · yves.unser@me.com · Angebot vom 15.09.2026, gültig 30 Tage.
+      Alle Preise netto zzgl. 19 % USt. Die gezeigten Reels und Karussell-Slides sind Beispielumsetzungen
+      der Content-Formel; das Runway-Material trägt das Branding Dritter und ist vor einer Veröffentlichung
+      freizugeben. Systemansichten enthalten Beispieldaten.
+    </p>
+  </div>
+</footer>
+
+<script>
+  const car = document.getElementById("carousel");
+  const step = () => Math.min(car.clientWidth * 0.8, 640);
+  document.querySelectorAll(".carousel-nav button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      car.scrollBy({ left: Number(btn.dataset.dir) * step(), behavior: "smooth" });
+    });
+  });
+  car.addEventListener("keydown", e => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    e.preventDefault();
+    car.scrollBy({ left: (e.key === "ArrowRight" ? 1 : -1) * step(), behavior: "smooth" });
+  });
+  const vids = [...document.querySelectorAll("video")];
+  vids.forEach(v => v.addEventListener("play", () => vids.filter(o => o !== v).forEach(o => o.pause())));
+</script>
+
+</body>
+</html>
