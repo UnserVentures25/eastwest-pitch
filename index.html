@@ -179,7 +179,7 @@
 
   .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
   .reel { display: flex; flex-direction: column; gap: .85rem; }
-  .reel video { width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 2px; border: 1px solid var(--line); display: block; }
+  .reel video { width: 100%; height: auto; aspect-ratio: 9 / 16; background: #000; border-radius: 2px; border: 1px solid var(--line); display: block; }
   .reel .pillar { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; }
   .reel p { color: var(--muted); font-size: .92rem; }
   .reel .meta { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -878,7 +878,7 @@
       <table>
         <thead><tr><th style="width:20%">Modul</th><th>Was es kann</th><th style="width:26%">Verbesserung ggü. Mediaslide</th></tr></thead>
         <tbody>
-          <tr><td><strong>Foundation &amp; Sicherheit</strong></td><td>Login, 8 Rollen (Admin, Booker, Scout, Accounting, Marketing, Model, Client), granulare Rechte, Mandantenfähigkeit</td><td>DSGVO-konform, EU-Hosting, volle Datenhoheit</td></tr>
+          <tr><td><strong>Foundation &amp; Sicherheit</strong></td><td>Login, 8 Rollen (Super-Admin, Agentur-Admin, Booker, Scout, Accounting, Marketing, Model, Client), granulare Rechte, Mandantenfähigkeit</td><td>DSGVO-konform, EU-Hosting, volle Datenhoheit</td></tr>
           <tr><td><strong>Model Database</strong></td><td>Profile, Maße mit Historie, Portfolio/Polas/Digitals, Dokumente mit Ablaufdaten, Skills, Rates</td><td>Vollständigkeits-Score pro Profil, alles verknüpft</td></tr>
           <tr><td><strong>Model Portal + Self-Onboarding</strong></td><td>Jedes Model pflegt Profil, Fotos, Maße, Dokumente selbst; Onboarding-Wizard per Link</td><td><strong>Booker tippt keine Modeldaten mehr ein</strong> — Model liefert, Booker gibt frei</td></tr>
           <tr><td><strong>Aktualitäts-Engine</strong></td><td>Ampel-Status für Polas / Maße / Pass; automatische Reminder mit Eskalation an den Booker</td><td>Mediaslide erinnert niemanden — hier bleibt die Kartei von selbst aktuell</td></tr>
