@@ -5,7 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="description" content="Angebot Unser Ventures für East West Models — Digital Agency OS und Social Media Engine.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://unserventures25.github.io/eastwest-pitch/">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Unser Ventures">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://unserventures25.github.io/eastwest-pitch/">
+<meta property="og:title" content="Digital Agency OS und Social Media Engine — East West Models">
+<meta property="og:description" content="Ein eigenes Betriebssystem statt Mediaslide-Miete und ein Instagram-Kanal, der Kundenanfragen erzeugt. Mit Beispiel-Reels und Ansichten aus dem laufenden System.">
+<meta property="og:image" content="https://unserventures25.github.io/eastwest-pitch/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="East West Models — Digital Agency OS und Social Media Engine">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Agency OS und Social Media Engine — East West Models">
+<meta name="twitter:description" content="Ein eigenes Betriebssystem statt Mediaslide-Miete und ein Instagram-Kanal, der Kundenanfragen erzeugt.">
+<meta name="twitter:image" content="https://unserventures25.github.io/eastwest-pitch/og-image.jpg">
 <title>East West Pitch 2026</title>
+<script>document.documentElement.dataset.js = "1";</script>
 <style>
   :root {
     --bg: #FFFFFF;
@@ -15,6 +37,7 @@
     --fg: #111315;
     --muted: #5C686F;
     --accent: #009FE3;
+    --accent-text: #006A99;
     --accent-soft: rgba(0, 159, 227, 0.10);
     --shadow: 0 1px 2px rgba(16,24,32,.05);
     --sans: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -32,6 +55,7 @@
       --line: #2A2C2E;
       --fg: #FFFFFF;
       --muted: #94A0A7;
+      --accent-text: #009FE3;
       --accent-soft: rgba(0, 159, 227, 0.14);
       --shadow: 0 1px 0 rgba(255,255,255,.04);
     }
@@ -43,6 +67,7 @@
     --line: #2A2C2E;
     --fg: #FFFFFF;
     --muted: #94A0A7;
+    --accent-text: #009FE3;
     --accent-soft: rgba(0, 159, 227, 0.14);
     --shadow: 0 1px 0 rgba(255,255,255,.04);
   }
@@ -54,7 +79,7 @@
   }
   .wrap { width: min(1120px, 92vw); margin-inline: auto; }
 
-  .eyebrow { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 .9rem; }
+  .eyebrow { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; margin: 0 0 .9rem; }
   h1, h2, h3, h4 { text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -.02em; }
   h1 { font-size: var(--step-4); line-height: 1.02; }
   h1 .thin { font-weight: 300; display: block; color: var(--muted); }
@@ -62,7 +87,7 @@
   h3 { font-size: var(--step-1); line-height: 1.25; }
   h4 { font-size: 1.05rem; }
   p { margin: 0; }
-  a { color: var(--accent); }
+  a { color: var(--accent-text); }
 
   header.hero { border-bottom: 1px solid var(--line); padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3rem); }
   .hero-inner { display: flex; flex-direction: column; gap: 1.6rem; }
@@ -81,11 +106,11 @@
     letter-spacing: .02em; padding: 1.1rem 1.1rem; cursor: pointer; white-space: nowrap;
     display: flex; flex-direction: column; gap: .15rem; text-align: left;
   }
-  .tab .sub { font-size: .7rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); opacity: .8; }
+  .tab .sub { font-size: .7rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
   .tab:hover { color: var(--fg); }
-  .tab[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
-  .tab[aria-selected="true"] .sub { color: var(--accent); opacity: 1; }
-  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .tab[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent-text); }
+  .tab[aria-selected="true"] .sub { color: var(--accent-text); opacity: 1; }
+  .tab:focus-visible { outline: 2px solid var(--fg); outline-offset: -2px; }
 
   section { padding: clamp(2.6rem, 6vw, 4.5rem) 0; border-bottom: 1px solid var(--line); }
   .sec-head { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2.2rem; }
@@ -95,7 +120,7 @@
   .stack p, .stack ul { color: var(--muted); }
   .stack strong, .stack b { color: var(--fg); font-weight: 600; }
   .sub-h { margin: 2.4rem 0 1rem; }
-  .sub-h .cy { color: var(--accent); font-weight: 400; }
+  .sub-h .cy { color: var(--accent-text); font-weight: 400; }
 
   ul.list { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: .5rem; max-width: 78ch; }
   ul.list strong { color: var(--fg); font-weight: 600; }
@@ -112,11 +137,11 @@
     padding: 1.5rem 1.4rem; margin: 1.8rem 0;
   }
   .darkbox .big { font-size: var(--step-2); font-weight: 700; letter-spacing: -.02em; }
-  .darkbox .big .cy { color: var(--accent); }
+  .darkbox .big .cy { color: var(--accent-text); }
   .darkbox p { color: var(--muted); margin-top: .6rem; max-width: 74ch; }
   .darkbox ol { margin: .8rem 0 0; padding-left: 1.2rem; color: var(--muted); display: grid; gap: .45rem; }
 
-  .formel { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 1.4rem 0; }
+  .formel { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); margin: 1.4rem 0; }
   .formel div {
     background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
     padding: .85rem .9rem; display: flex; flex-direction: column; gap: .15rem;
@@ -124,14 +149,15 @@
   .formel b { font-size: .95rem; }
   .formel span { font-size: .78rem; color: var(--muted); }
 
-  .offers { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .offers { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
   .offer {
     background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
     padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow);
+    min-width: 0;
   }
-  .offer.pick { border-color: var(--accent); }
-  .offer .tag { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
-  .price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+  .offer.pick { border-color: var(--accent-text); }
+  .offer .tag { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; }
+  .price-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .35rem 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
   .price-row .label { color: var(--muted); font-size: .9rem; }
   .price { font-size: var(--step-2); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .price small { font-size: .8rem; font-weight: 400; color: var(--muted); }
@@ -146,15 +172,15 @@
     transition: border-color .15s ease, background-color .15s ease;
   }
   .pdflink.solo { margin-top: 0; max-width: 420px; }
-  .pdflink:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .pdflink:hover { border-color: var(--accent-text); background: var(--accent-soft); }
   .pdflink:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
-  .pdflink svg { flex: none; width: 15px; height: 15px; stroke: var(--accent); }
+  .pdflink svg { flex: none; width: 15px; height: 15px; stroke: var(--accent-text); }
   .pdflink .meta { margin-left: auto; color: var(--muted); font-weight: 400; font-size: .75rem; white-space: nowrap; }
 
-  .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .reels { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
   .reel { display: flex; flex-direction: column; gap: .85rem; }
   .reel video { width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 2px; border: 1px solid var(--line); display: block; }
-  .reel .pillar { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .reel .pillar { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; }
   .reel p { color: var(--muted); font-size: .92rem; }
   .reel .meta { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
@@ -162,10 +188,10 @@
   .carousel img { flex: 0 0 clamp(220px, 28vw, 300px); scroll-snap-align: start; border: 1px solid var(--line); border-radius: 2px; height: auto; display: block; }
   .carousel-nav { display: flex; gap: .5rem; margin-top: .4rem; }
   .carousel-nav button { background: var(--surface-2); color: var(--fg); border: 1px solid var(--line); border-radius: 2px; width: 40px; height: 34px; cursor: pointer; font-size: 1rem; line-height: 1; }
-  .carousel-nav button:hover { border-color: var(--accent); color: var(--accent); }
-  .carousel-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .carousel-nav button:hover { border-color: var(--accent-text); color: var(--accent-text); }
+  .carousel-nav button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
-  .screens { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .screens { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
   .screen figure { margin: 0; display: flex; flex-direction: column; gap: .6rem; }
   .screen img { width: 100%; border: 1px solid var(--line); border-radius: 2px; display: block; }
   .screen figcaption { font-size: .85rem; color: var(--muted); }
@@ -179,7 +205,7 @@
   .steps article:last-child { border-bottom: 0; }
   .steps .n {
     width: 2.2rem; height: 2.2rem; border: 1px solid var(--line); border-radius: 2px;
-    display: grid; place-items: center; font-size: .82rem; font-weight: 700; color: var(--accent);
+    display: grid; place-items: center; font-size: .82rem; font-weight: 700; color: var(--accent-text);
     background: var(--surface); font-variant-numeric: tabular-nums;
   }
   .steps .when { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
@@ -188,6 +214,7 @@
   .steps strong { color: var(--fg); font-weight: 600; }
 
   .table-scroll { overflow-x: auto; margin: 1.2rem 0; }
+  .table-scroll:focus-visible, .carousel:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
   table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 540px; }
   th { text-align: left; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding: 0 1rem .7rem 0; border-bottom: 1px solid var(--line); }
   td { padding: .8rem 1rem .8rem 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted); }
@@ -197,7 +224,7 @@
   tr.highlight td:first-child { padding-left: .7rem; }
   table.keyed td:first-child { color: var(--fg); font-weight: 600; width: 27%; }
   .no { color: var(--muted); }
-  .yes { color: var(--accent); font-weight: 700; }
+  .yes { color: var(--accent-text); font-weight: 700; }
 
   .note { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 74ch; }
 
@@ -208,7 +235,7 @@
   .cta a.button { background: var(--accent); color: #041018; text-decoration: none; font-weight: 700; padding: .8rem 1.5rem; border-radius: 2px; font-size: .9rem; letter-spacing: .04em; }
   .cta a.button:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
   .cta a.ghost { border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600; padding: .8rem 1.3rem; border-radius: 2px; font-size: .85rem; background: var(--surface-2); }
-  .cta a.ghost:hover { border-color: var(--accent); }
+  .cta a.ghost:hover { border-color: var(--accent-text); }
   .cta a.ghost:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
   .legal { margin-top: 2rem; font-size: .75rem; color: var(--muted); max-width: 80ch; }
   .sign { margin-top: 1.6rem; }
@@ -216,7 +243,39 @@
   .sign span { color: var(--muted); }
 
   [hidden] { display: none !important; }
+  [data-js="1"] [role="tabpanel"][data-inactive] { display: none; }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+  @media print {
+    :root {
+      --bg: #FFFFFF; --surface: #FFFFFF; --surface-2: #FFFFFF; --line: #999999;
+      --fg: #000000; --muted: #333333; --accent: #000000; --accent-text: #000000;
+      --accent-soft: #EEEEEE; --shadow: none;
+    }
+    body { font-size: 10pt; line-height: 1.45; }
+    .tabbar, .carousel-nav, .cta a.button, .cta a.ghost { display: none !important; }
+    [role="tabpanel"], [role="tabpanel"][hidden], [role="tabpanel"][data-inactive] { display: block !important; }
+    [role="tabpanel"]::before {
+      content: attr(data-print-title);
+      display: block; font-size: 15pt; font-weight: 700; letter-spacing: -.02em;
+      padding: 10mm 0 2mm; border-bottom: 2px solid #000; break-before: page;
+    }
+    #panel-social::before { break-before: auto; }
+    .wrap { width: 100%; }
+    section { padding: 6mm 0; break-inside: auto; }
+    .sec-head, .offer, .kbox, .darkbox, .steps article, .screen figure, .reel { break-inside: avoid; }
+    h1 { font-size: 24pt; } h2 { font-size: 15pt; } h3 { font-size: 11.5pt; }
+    .table-scroll, .carousel { overflow: visible !important; }
+    table { min-width: 0; font-size: 8.5pt; }
+    td, th { padding: 2mm 3mm 2mm 0; }
+    .carousel { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+    .carousel img { flex: none; width: 100%; }
+    .reel video { display: none; }
+    .reel::after { content: "Reel — online abspielbar unter unserventures25.github.io/eastwest-pitch"; font-size: 8pt; color: #333; }
+    .screens { grid-template-columns: repeat(2, 1fr); }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #333; word-break: break-all; }
+    .pdflink, .legal a { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -224,7 +283,7 @@
 <header class="hero">
   <div class="wrap hero-inner">
     <div class="brandline">
-      <img src="logo.png" alt="East West Models">
+      <img src="logo.png" alt="East West Models" width="634" height="178" fetchpriority="high">
       <span>Angebot 2026 · Unser Ventures</span>
     </div>
     <h1>Digital Agency OS<span class="thin">und Social Media Engine</span></h1>
@@ -234,19 +293,21 @@
   </div>
 </header>
 
-<nav class="tabbar" aria-label="Angebote">
-  <div class="wrap tabbar-inner" role="tablist">
-    <button class="tab" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="true" type="button">
+<nav class="tabbar">
+  <div class="wrap tabbar-inner" role="tablist" aria-label="Die beiden Angebote">
+    <button class="tab" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="true" tabindex="0" type="button">
       <span class="sub">Instagram &amp; Content</span>Social Media Engine
     </button>
-    <button class="tab" role="tab" id="tab-os" aria-controls="panel-os" aria-selected="false" type="button">
+    <button class="tab" role="tab" id="tab-os" aria-controls="panel-os" aria-selected="false" tabindex="-1" type="button">
       <span class="sub">Mediaslide-Ersatz</span>Digital Agency OS
     </button>
   </div>
 </nav>
 
+<main id="inhalt">
+
 <!-- ==================== PANEL: SOCIAL MEDIA ==================== -->
-<div id="panel-social" role="tabpanel" aria-labelledby="tab-social" tabindex="-1">
+<div id="panel-social" role="tabpanel" aria-labelledby="tab-social" tabindex="0" data-print-title="Teil 2 — Social Media Engine">
 
 <section>
   <div class="wrap">
@@ -278,16 +339,16 @@
       <div><b>Knowledge</b><span>echtes Casting-Wissen</span></div>
       <div><b>Model</b><span>Beispiel am Talent</span></div>
       <div><b>Proof</b><span>Erfahrung, Jobs, Jahre</span></div>
-      <div><b>CTA</b><span>„Send us your brief“</span></div>
+      <div><b>CTA</b><span lang="en">„Send us your brief“</span></div>
     </div>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:44%">Heute</th><th>Künftig</th></tr></thead>
         <tbody>
-          <tr><td>„Meet Eve.“</td><td>„Why Eve works for watch campaigns — and what brands should look for in a watch model.“</td></tr>
-          <tr><td>„Eve wearing @brand.“</td><td>„18 years with East West. Still booking. What makes a model last?“</td></tr>
-          <tr><td>Beliebiges „DM us“</td><td>„Have a casting brief? Send it to East West.“</td></tr>
+          <tr><td lang="en">„Meet Eve.“</td><td lang="en">„Why Eve works for watch campaigns — and what brands should look for in a watch model.“</td></tr>
+          <tr><td lang="en">„Eve wearing @brand.“</td><td lang="en">„18 years with East West. Still booking. What makes a model last?“</td></tr>
+          <tr><td>Beliebiges <span lang="en">„DM us“</span></td><td lang="en">„Have a casting brief? Send it to East West.“</td></tr>
           <tr><td>Zielgruppe: Branche und Models</td><td>Zielgruppe: Menschen mit Budget</td></tr>
         </tbody>
       </table>
@@ -303,7 +364,7 @@
       <p>Jede Säule hat ein Ziel, ein festes Format und einen wiederkehrenden Rhythmus — planbar statt zufällig.</p>
     </div>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:22%">Säule</th><th>Was gezeigt wird</th><th style="width:24%">Ziel</th></tr></thead>
         <tbody>
@@ -328,7 +389,7 @@
 
     <div class="kbox">
       <div class="t">Ein CTA statt zehn</div>
-      Kein beliebiges „DM us“. Stattdessen durchgängig eine Handlung: <strong>„Have a casting brief? Send it to East West.“</strong>
+      Kein beliebiges „DM us“. Stattdessen durchgängig eine Handlung: <strong lang="en">„Have a casting brief? Send it to East West.“</strong>
       Das ist nicht nur professioneller — es ist auch messbar, weil eingehende Briefs künftig automatisch im Agency OS landen.
     </div>
   </div>
@@ -345,27 +406,27 @@
 
     <div class="reels">
       <article class="reel">
-        <video src="reel-1.mp4" controls preload="metadata" playsinline></video>
+        <video src="reel-1.mp4" poster="poster-1.jpg" controls preload="none" playsinline width="1080" height="1920" aria-labelledby="reel-1-title"></video>
         <span class="pillar">Casting Knowledge</span>
-        <h3>What makes a great beauty model?</h3>
+        <h3 id="reel-1-title" lang="en">What makes a great beauty model?</h3>
         <p>Drei Kriterien, die kein Portfolio zeigt — Symmetrie im Close-up, Ausdruck ohne Überspielen,
           Konsistenz nach sechs Stunden am Set.</p>
         <span class="meta">15 Sekunden · ohne Ton</span>
       </article>
 
       <article class="reel">
-        <video src="reel-2.mp4" controls preload="metadata" playsinline></video>
+        <video src="reel-2.mp4" poster="poster-2.jpg" controls preload="none" playsinline width="1080" height="1920" aria-labelledby="reel-2-title"></video>
         <span class="pillar">Agency Insights</span>
-        <h3>You don't need more models</h3>
+        <h3 id="reel-2-title" lang="en">You don't need more models</h3>
         <p>Runway-Material mit Originalton. Die Aussage kehrt das Problem um: Models finden ist einfach,
           das richtige finden ist die Leistung.</p>
         <span class="meta">17 Sekunden · mit Ton</span>
       </article>
 
       <article class="reel">
-        <video src="reel-3.mp4" controls preload="metadata" playsinline></video>
+        <video src="reel-3.mp4" poster="poster-3.jpg" controls preload="none" playsinline width="1080" height="1920" aria-labelledby="reel-3-title"></video>
         <span class="pillar">Behind the Booking</span>
-        <h3>Was nach dem Brief passiert</h3>
+        <h3 id="reel-3-title">Was nach dem Brief passiert</h3>
         <p>Sieben Schritte vom Brief bis zum Shooting — erklärt, warum eine Agentur mehr leistet als eine
           Suche auf Instagram.</p>
         <span class="meta">20 Sekunden · ohne Ton</span>
@@ -378,19 +439,19 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Karussell</p>
-      <h2>Casting Director's Eye #01</h2>
+      <h2 id="karussell-titel" lang="en">Casting Director's Eye #01</h2>
       <p>Sieben Slides: warum ein Model für Luxus-Kampagnen funktioniert. Seitlich scrollen oder die
         Pfeiltasten benutzen.</p>
     </div>
 
-    <div class="carousel" id="carousel" tabindex="0" aria-label="Karussell-Slides">
-      <img src="k-01.jpg" alt="Slide 1 — Why this model works for luxury campaigns">
-      <img src="k-02.jpg" alt="Slide 2 — Presence, not posing">
-      <img src="k-03.jpg" alt="Slide 3 — Hands and wrists">
-      <img src="k-04.jpg" alt="Slide 4 — Motion experience">
-      <img src="k-05.jpg" alt="Slide 5 — Brand fit over beauty">
-      <img src="k-06.jpg" alt="Slide 6 — Proof, not promises">
-      <img src="k-07.jpg" alt="Slide 7 — Have a casting brief?">
+    <div class="carousel" id="carousel" tabindex="0" role="region" aria-labelledby="karussell-titel">
+      <img src="k-01.jpg" alt="Slide 1 — Why this model works for luxury campaigns" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-02.jpg" alt="Slide 2 — Presence, not posing" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-03.jpg" alt="Slide 3 — Hands and wrists" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-04.jpg" alt="Slide 4 — Motion experience" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-05.jpg" alt="Slide 5 — Brand fit over beauty" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-06.jpg" alt="Slide 6 — Proof, not promises" width="1080" height="1350" loading="lazy" decoding="async">
+      <img src="k-07.jpg" alt="Slide 7 — Have a casting brief?" width="1080" height="1350" loading="lazy" decoding="async">
     </div>
     <div class="carousel-nav">
       <button type="button" data-dir="-1" aria-label="Vorherige Slides">&larr;</button>
@@ -409,7 +470,7 @@
     </div>
 
     <h3>Wochenplan, automatisch vorbereitet</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:14%">Tag</th><th style="width:24%">Säule</th><th>Vom System vorgeschlagen</th></tr></thead>
         <tbody>
@@ -441,7 +502,7 @@
     </div>
 
     <h3 class="sub-h">Was gebaut wird</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:27%">Baustein</th><th>Funktion</th></tr></thead>
         <tbody>
@@ -520,7 +581,7 @@
       <p>Die Aufgabe, die hier automatisiert wird, erledigt sonst eine Person: Ideen entwickeln, Texte schreiben,
         Bilder auswählen, planen, posten, auswerten. Der Vergleich über zwei Jahre:</p>
     </div>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Weg</th><th class="num">Jahr 1</th><th class="num">Jahr 2</th><th class="num">2 Jahre gesamt</th></tr></thead>
         <tbody>
@@ -539,7 +600,7 @@
       Unterschied liegt nicht nur im Preis: Eine Person, die geht, nimmt ihr Wissen mit. Das System bleibt.</p>
 
     <h3 class="sub-h">Laufend</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Leistung</th><th class="num" style="width:20%">Preis</th></tr></thead>
         <tbody>
@@ -559,7 +620,7 @@
     </div>
 
     <h3 class="sub-h">Zeitplan</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:22%">Phase</th><th>Inhalt</th><th class="num" style="width:18%">Dauer</th></tr></thead>
         <tbody>
@@ -621,7 +682,7 @@
 </div>
 
 <!-- ==================== PANEL: AGENCY OS ==================== -->
-<div id="panel-os" role="tabpanel" aria-labelledby="tab-os" tabindex="-1" hidden>
+<div id="panel-os" role="tabpanel" aria-labelledby="tab-os" tabindex="0" data-inactive data-print-title="Teil 1 — Digital Agency OS">
 
 <section>
   <div class="wrap">
@@ -655,7 +716,7 @@
     </div>
 
     <h3 class="sub-h">Wo die Zeit heute hingeht <span class="cy">— und was bleibt</span></h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Manuelle Aufgabe heute</th><th class="num">Std./Wo.*</th><th>Im Agency OS</th><th class="num">Std./Wo.*</th></tr></thead>
         <tbody>
@@ -692,19 +753,19 @@
 
     <div class="screens">
       <div class="screen"><figure>
-        <img src="app-models.jpg" alt="Model-Übersicht mit Portfolio-Karten">
+        <img src="app-models.jpg" alt="Model-Übersicht mit Portfolio-Karten" width="1500" height="937" loading="lazy" decoding="async">
         <figcaption><b>Model Database.</b> Portfolio, Maße, Vollständigkeits-Score und Ampel für Polas, Maße und Pass.</figcaption>
       </figure></div>
       <div class="screen"><figure>
-        <img src="app-inquiry.jpg" alt="Anfrage mit AI-Analyse">
+        <img src="app-inquiry.jpg" alt="Anfrage mit AI-Analyse" width="1500" height="937" loading="lazy" decoding="async">
         <figcaption><b>AI-Brief-Analyse.</b> Aus der Kunden-Mail extrahiert: Datum, Location, Models, Budget, Usage — mit Konfidenzwert und einer Liste der offenen Punkte.</figcaption>
       </figure></div>
       <div class="screen"><figure>
-        <img src="app-kalender.jpg" alt="Produktionskalender">
+        <img src="app-kalender.jpg" alt="Produktionskalender" width="1500" height="937" loading="lazy" decoding="async">
         <figcaption><b>Produktionskalender.</b> Bookings, Optionen, Castings, Go-Sees und Sperrzeiten in einer Ansicht, mit automatischem Konflikt-Check.</figcaption>
       </figure></div>
       <div class="screen"><figure>
-        <img src="app-expenses.jpg" alt="AI Expense Management">
+        <img src="app-expenses.jpg" alt="AI Expense Management" width="1500" height="937" loading="lazy" decoding="async">
         <figcaption><b>AI Expense Management.</b> Anbieter, Betrag, Datum und Job werden aus dem Beleg gelesen. Der Hotelbeleg ist als Prüfung markiert, weil dieselbe Übernachtung bereits über die Agentur lief — genau die Doppelzahlung, die sonst niemandem auffällt.</figcaption>
       </figure></div>
     </div>
@@ -805,7 +866,7 @@
     </div>
 
     <h3>Stufe 1 — Kern-System</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:20%">Modul</th><th>Was es kann</th><th style="width:26%">Verbesserung ggü. Mediaslide</th></tr></thead>
         <tbody>
@@ -828,7 +889,7 @@
     </div>
 
     <h3 class="sub-h">Stufe 2 — Ausbau</h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:26%">Modul</th><th>Was es kann</th></tr></thead>
         <tbody>
@@ -861,7 +922,7 @@
         beauftragt würde.</p>
     </div>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Modul</th><th class="num" style="width:26%">Einzelpreis klassische Agentur</th></tr></thead>
         <tbody>
@@ -894,22 +955,22 @@
         (Mediaslide, Syngency, Netwalk u. a.): <strong>ca. 300 – 800 €/Monat</strong> je nach Agenturgröße und
         Modulen — Schätzwert, als solcher gekennzeichnet.</p>
     </div>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table class="keyed">
-        <thead><tr><th>&nbsp;</th><th style="width:26%">Mediaslide (Miete)</th><th style="width:30%">EASTWEST Agency OS</th></tr></thead>
+        <thead><tr><th scope="col">Kriterium</th><th scope="col" style="width:26%">Mediaslide (Miete)</th><th scope="col" style="width:30%">EASTWEST Agency OS</th></tr></thead>
         <tbody>
-          <tr><td>Eigentum</td><td class="no">Nie — Miete auf ewig</td><td class="yes">Gehört East West</td></tr>
-          <tr><td>Postfach-Anbindung: Anfragen automatisch erfassen</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>AI Brief-Analyse &amp; Matching</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>Automatische Pola-/Dokument-Reminder</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>AI-Rechnungsentwürfe + Spesen-OCR</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>Package-View-Tracking (Hot Leads)</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>AI Newsletter + Kunden-Reaktivierung</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>Action Center / Daily Briefing</td><td class="no">Nein</td><td class="yes">Ja</td></tr>
-          <tr><td>Anpassbar an eure Workflows</td><td class="no">Kaum</td><td class="yes">Vollständig</td></tr>
-          <tr><td>Datenhoheit / EU-Hosting</td><td class="no">Anbieterabhängig</td><td class="yes">Ja, eigene Datenbank</td></tr>
-          <tr><td>White-Label-Weiterverkauf</td><td class="no">Unmöglich</td><td class="yes">Möglich (Option)</td></tr>
-          <tr class="highlight"><td>Kosten über 5 Jahre</td><td>ca. 18.000 – 48.000 € Miete*</td><td>18.900 € einmalig + Betrieb</td></tr>
+          <tr><th scope="row">Eigentum</th><td class="no">Nie — Miete auf ewig</td><td class="yes">Gehört East West</td></tr>
+          <tr><th scope="row">Postfach-Anbindung: Anfragen automatisch erfassen</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">AI Brief-Analyse &amp; Matching</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">Automatische Pola-/Dokument-Reminder</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">AI-Rechnungsentwürfe + Spesen-OCR</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">Package-View-Tracking (Hot Leads)</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">AI Newsletter + Kunden-Reaktivierung</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">Action Center / Daily Briefing</th><td class="no">Nein</td><td class="yes">Ja</td></tr>
+          <tr><th scope="row">Anpassbar an eure Workflows</th><td class="no">Kaum</td><td class="yes">Vollständig</td></tr>
+          <tr><th scope="row">Datenhoheit / EU-Hosting</th><td class="no">Anbieterabhängig</td><td class="yes">Ja, eigene Datenbank</td></tr>
+          <tr><th scope="row">White-Label-Weiterverkauf</th><td class="no">Unmöglich</td><td class="yes">Möglich (Option)</td></tr>
+          <tr class="highlight"><th scope="row">Kosten über 5 Jahre</th><td>ca. 18.000 – 48.000 € Miete*</td><td>18.900 € einmalig + Betrieb</td></tr>
         </tbody>
       </table>
     </div>
@@ -964,7 +1025,7 @@
     </div>
 
     <h3 class="sub-h">Step-by-Step-Erweiterungen <span class="cy">— nach dem Starter einzeln buchbar</span></h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Erweiterung</th><th class="num" style="width:20%">Preis</th></tr></thead>
         <tbody>
@@ -994,7 +1055,7 @@
     <p class="note">Größere neue Features nach Aufwand oder als Festpreis-Paket.</p>
 
     <h3 class="sub-h">Optional: Stufe 3 <span class="cy">— nach Go-Live</span></h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Option</th><th class="num" style="width:24%">Preis</th></tr></thead>
         <tbody>
@@ -1033,7 +1094,7 @@
     </ul>
 
     <h3 class="sub-h">Rechenbeispiel <span class="cy">— konservativ gerechnet</span></h3>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th>Szenario</th><th class="num">Agenturen</th><th class="num">Lizenz je Monat</th><th class="num">Erlös pro Jahr</th></tr></thead>
         <tbody>
@@ -1067,7 +1128,7 @@
       <p>Parallelbetrieb statt Risiko-Umstieg: Mediaslide wird erst gekündigt, wenn das Team vollständig umgestellt ist.</p>
     </div>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, seitlich scrollbar">
       <table>
         <thead><tr><th style="width:22%">Phase</th><th>Inhalt</th><th class="num" style="width:18%">Dauer</th></tr></thead>
         <tbody>
@@ -1107,6 +1168,8 @@
 
 </div>
 
+</main>
+
 <footer>
   <div class="wrap">
     <div class="cta">
@@ -1140,48 +1203,91 @@
 
 <script>
   (function () {
-    const tabs = [...document.querySelectorAll('.tab')];
-    const panels = { 'tab-social': 'panel-social', 'tab-os': 'panel-os' };
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
+    function behavior() { return (reduce && reduce.matches) ? "auto" : "smooth"; }
 
-    function select(id, push) {
-      tabs.forEach(t => {
-        const on = t.id === id;
-        t.setAttribute('aria-selected', String(on));
-        document.getElementById(panels[t.id]).hidden = !on;
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+    var byTab = { "tab-social": "panel-social", "tab-os": "panel-os" };
+    var hashOf = { "tab-social": "#social-media", "tab-os": "#agency-os" };
+    var tabOf = { "#agency-os": "tab-os", "#social-media": "tab-social" };
+
+    function current() {
+      for (var i = 0; i < tabs.length; i++) {
+        if (tabs[i].getAttribute("aria-selected") === "true") return tabs[i].id;
+      }
+      return tabs[0].id;
+    }
+
+    function select(id, mode) {
+      var changed = id !== current();
+      tabs.forEach(function (t) {
+        var on = t.id === id;
+        var panel = document.getElementById(byTab[t.id]);
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+        if (!panel) return;
+        if (on) { panel.removeAttribute("data-inactive"); panel.hidden = false; }
+        else {
+          panel.setAttribute("data-inactive", "");
+          panel.hidden = true;
+          panel.querySelectorAll("video").forEach(function (v) { v.pause(); });
+        }
       });
-      document.querySelectorAll('video').forEach(v => v.pause());
-      if (push) {
-        const hash = id === 'tab-os' ? '#agency-os' : '#social-media';
-        history.replaceState(null, '', hash);
-        window.scrollTo({ top: document.querySelector('.tabbar').offsetTop, behavior: 'smooth' });
+      if (!changed && mode !== "init") return;
+      if (mode === "user") {
+        history.pushState({ tab: id }, "", hashOf[id]);
+        window.scrollTo({ top: document.querySelector(".tabbar").offsetTop, behavior: behavior() });
+      } else if (mode === "history") {
+        history.replaceState({ tab: id }, "", hashOf[id]);
       }
     }
 
-    tabs.forEach(t => t.addEventListener('click', () => select(t.id, true)));
-    document.querySelector('[role="tablist"]').addEventListener('keydown', e => {
-      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () { select(t.id, "user"); });
+    });
+
+    document.querySelector('[role="tablist"]').addEventListener("keydown", function (e) {
+      var keys = { ArrowRight: 1, ArrowLeft: -1, Home: "first", End: "last" };
+      if (!(e.key in keys)) return;
       e.preventDefault();
-      const i = tabs.findIndex(t => t.getAttribute('aria-selected') === 'true');
-      const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      var from = tabs.indexOf(document.activeElement);
+      if (from < 0) from = tabs.indexOf(document.getElementById(current()));
+      var next;
+      if (keys[e.key] === "first") next = tabs[0];
+      else if (keys[e.key] === "last") next = tabs[tabs.length - 1];
+      else next = tabs[(from + keys[e.key] + tabs.length) % tabs.length];
       next.focus();
-      select(next.id, true);
+      select(next.id, "user");
     });
 
-    select(location.hash === '#agency-os' ? 'tab-os' : 'tab-social', false);
+    function fromHash(mode) {
+      select(tabOf[location.hash] || "tab-social", mode);
+    }
+    window.addEventListener("hashchange", function () { fromHash("silent"); });
+    window.addEventListener("popstate", function () { fromHash("silent"); });
+    fromHash("init");
 
-    const car = document.getElementById('carousel');
-    const step = () => Math.min(car.clientWidth * 0.8, 640);
-    document.querySelectorAll('.carousel-nav button').forEach(btn => {
-      btn.addEventListener('click', () => car.scrollBy({ left: Number(btn.dataset.dir) * step(), behavior: 'smooth' }));
-    });
-    car.addEventListener('keydown', e => {
-      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-      e.preventDefault();
-      car.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * step(), behavior: 'smooth' });
-    });
+    var car = document.getElementById("carousel");
+    if (car) {
+      var step = function () { return Math.min(car.clientWidth * 0.8, 640); };
+      document.querySelectorAll(".carousel-nav button").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          car.scrollBy({ left: Number(btn.dataset.dir) * step(), behavior: behavior() });
+        });
+      });
+      car.addEventListener("keydown", function (e) {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        e.preventDefault();
+        car.scrollBy({ left: (e.key === "ArrowRight" ? 1 : -1) * step(), behavior: behavior() });
+      });
+    }
 
-    const vids = [...document.querySelectorAll('video')];
-    vids.forEach(v => v.addEventListener('play', () => vids.filter(o => o !== v).forEach(o => o.pause())));
+    var vids = Array.prototype.slice.call(document.querySelectorAll("video"));
+    vids.forEach(function (v) {
+      v.addEventListener("play", function () {
+        vids.forEach(function (o) { if (o !== v) o.pause(); });
+      });
+    });
   })();
 </script>
 
